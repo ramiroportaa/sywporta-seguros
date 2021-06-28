@@ -1,0 +1,150 @@
+<!DOCTYPE html> <!-- creamos el documento -->
+<html lang="es"> <!-- asignamos lenguaje español -->
+<head> <!-- Cabecera -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala adaptable al dispositivo -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link a css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link a google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!-- Link a google fonts -->
+    <title>SyWPorta Asesores de Seguros</title> <!-- titulo de la pagina -->
+
+</head>
+
+<body> <!-- Comienzo del cuerpo -->
+    <div id="grilla-siniestro">
+        <header class="Header"> <!-- Comienzo de Encabezado de pagina -->
+            <div class="Encabezado">
+                <img src="img/logo_syw.png" alt="LOGO SYWPORTA" class="Encabezado__Logo">
+                <h1 class="Encabezado__Slogan">TRANQUI ESTAMOS CON VOS</h1><!-- Slogan central -->
+                <div class="Redes">
+                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/"><img class="Redes__img" src="img/icono_face.png" alt="Face"></a>
+                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/"><img class="Redes__img" src="img/icono_insta.png" alt="Insta"></a>
+                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Redes__img" src="img/icono_wsp.png" alt="Wsp"></a> 
+                </div>
+            </div>
+            <nav class="NavBar"> <!-- Comienzo del menu -->
+                <ul class="Menu">
+                    <li class="Menu__Elemento"><a href="index.html">HOME</a></li>
+                    <li class="Menu__Elemento"><a href="coberturas.html">COBERTURAS</a></li>
+                    <li class="Menu__Elemento"><a href="cotizaciones.html">COTIZACIONES</a></li>
+                    <li class="Menu__Elemento"><a href="nosotros.html">NOSOTROS</a></li>
+                    <li class="Menu__Elemento"><a href="siniestro.html">TUVE UN SINIESTRO</a></li>
+                </ul>
+            </nav> <!-- Fin del menu -->    
+
+        </header> <!-- Fin de Encabezado de pagina -->
+
+        <!-- <main class="Contenido"> -->
+            <section class="Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
+                <form class="FormularioSiniestro" action="enviar.php" method="POST" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>INFORMAR UN SINIESTRO AUTOMOTOR</legend>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del ASEGURADO</legend>
+                            <label for="nya_asegurado"> Nombre y Apellido </label>
+                            <input type="text" name="nya_asegurado" maxlength="100">
+                            <br>
+                            <label for="dni_asegurado"> DNI </label>
+                            <input type="text" name="dni_asegurado" maxlength="100">
+                            <br>
+                            <label for="tel_asegurado"> Tel/Cel. </label>
+                            <input type="tel" name="tel_asegurado" maxlength="14">
+                            <br>
+                            <label for="mail_asegurado"> E-Mail </label>
+                            <input type="email" name="mail_asegurado">
+                            <br>
+                            <label for="compa_asegurado">Compañia Aseguradora</label>
+                            <select name="compa_asegurado">
+                                <option value="Rivadavia">SEGUROS RIVADAVIA</option>
+                                <option value="Cooperacion">COOPERACION MUTUAL</option>
+                                <option value="Parana">PARANA S.A.</option>
+                            </select>
+                            <br>
+                            <label for="patente_asegurado">Patente</label>
+                            <input type="text" name="patente_asegurado" maxlength="20">
+                            <br>
+                        </fieldset>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del CONDUCTOR <small>(Solo si difiere del asegurado)</small></legend>
+                            <label for="nya_conductor"> Nombre y Apellido </label>
+                            <input type="text" name="nya_conductor" maxlength="100">
+                            <br>
+                            <label for="dni_conductor"> DNI </label>
+                            <input type="text" name="dni_conductor" maxlength="100">
+                            <br>
+                            <label for="tel_conductor"> Tel/Cel. </label>
+                            <input type="tel" name="tel_conductor" maxlength="14">
+                            <br>
+                        </fieldset>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del TERCERO <small>(En caso de existir)</small></legend>
+                            <label for="nya_tercero"> Nombre y Apellido </label>
+                            <input type="text" name="nya_tercero" maxlength="100">
+                            <br>
+                            <label for="dni_tercero"> DNI </label>
+                            <input type="text" name="dni_tercero" maxlength="100">
+                            <br>
+                            <label for="tel_tercero"> Tel/Cel. </label>
+                            <input type="tel" name="tel_tercero" maxlength="14">
+                            <br>
+                            <label for="vehiculo_tercero"> Vehiculo (Marca y modelo)</label>
+                            <input type="text" name="vehiculo_tercero" maxlength="200">
+                            <br>
+                            <label for="patente_tercero">Patente</label>
+                            <input type="text" name="patente_tercero" maxlength="20">
+                            <br>
+                            <label for="compa_tercero"> Compañia Aseguradora </label>
+                            <input type="text" name="compa_tercero" maxlength="100">
+                            <br>
+                        </fieldset>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del Siniestro</legend>
+                            <label for="fechahora">Fecha y Hora</label>
+                            <input type="datetime-local" name="fechahora">
+                            <br>
+                            <label for="lugar"> Lugar (Calle, Altura, Ciudad)</label>
+                            <input type="text" name="lugar" maxlength="200">
+                            <br>
+                            <textarea  name="sugerencias" cols="30" rows="10" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
+                            <br>
+                        </fieldset class="FormularioSiniestro__Set">
+                        <label for="newsletter">Desea recibir el newsletter?</label>
+                        <input type="checkbox" name="newsletter" value="1">
+                        <br>
+                        <input type="submit" name="submit" value="Enviar">
+                        <input type="reset" name="reset" value="Limpiar">
+                    </fieldset>
+            
+                </form>
+            </section>
+            <section class="ContenedorBanner">
+                <section class="BannerSiniestro"><!-- 2da seccion: banner wsp -->
+                    <h1 class="BannerSiniestro__Texto">Tuviste un siniestro de OTRO RAMO?</h1>
+                    <h2 class="BannerSiniestro__Texto">(Embarcaciones, Bicicletas, Vida, Accidentes personales, Hogar, etc)</h2>
+                    <div class="Wsp">
+                        <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><h3 class="Wsp__Texto">Contactanos por WhatsApp y te asesoramos!</h3></a>
+                        <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Wsp__Img" src="img/icono_wsp.png" alt="Wsp"></a>
+                    </div>
+                </section>
+            </section>
+        <!-- </main> -->
+
+        <footer class="Footer"> <!-- Comienzo del pie de pagina -->
+            <p class="Footer__Texto">Manuel Zavalla 102(N) <br> Rivadavia <br>SAN JUAN, ARGENTINA</p>
+            <hr>
+            <p class="Footer__Texto">Tel. 123456789</p>
+            <hr>
+            <p class="Footer__Texto">MAIL: mail@sywporta.com.ar</p>
+            <hr>
+            <p class="Footer__Texto">N° de inscripcion <br> 01234</p>
+            <hr>
+            <img class="Footer__Img" src="img/logo_ssn.png" alt="LOGO SSN">
+            <img class="Footer__Img" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA">
+            <img class="Footer__Img" src="img/logo_parana.png" alt="LOGO PARANA">
+            <img class="Footer__Img" src="img/logo_cooperacion.png" alt="LOGO COOPERACION">
+            <span class="Footer__Texto Footer__Texto--centro">Copyright 2021 - AVISO LEGAL</span>
+        </footer> <!-- Fin del pie de pagina -->
+    </div>
+</body>
+</html>

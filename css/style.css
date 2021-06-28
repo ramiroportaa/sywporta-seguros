@@ -1,0 +1,803 @@
+/* CSS GENERAL*/
+html {
+    position: relative;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS del BODY*/
+body {
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.6rem;
+    margin: 0;
+}
+
+/* CSS de los H*/
+h1 {color: black;
+}
+
+/* CSS GRIDS layouts */
+/* GRID index */
+#grilla-index{
+    display: grid;
+    grid-template-columns:100% ;
+    grid-template-rows: repeat(5,fit-content);
+    grid-template-areas:
+        "head"
+        "carrousel"
+        "companias"
+        "banner"
+        "foot";
+}
+
+.Header{
+    grid-area:head;
+}
+
+.container{
+    grid-area:carrousel;
+}
+
+.Companias{
+    grid-area:companias;
+}
+
+.Banner{
+    grid-area:banner;
+    background-color: #081B26;
+    padding: 10px 20px;
+}
+
+.Footer{
+    grid-area:foot;
+}
+
+/* GRID Siniestro */
+#grilla-siniestro{
+    display: grid;
+    grid-template-columns: 2fr 1fr ;
+    grid-template-rows: repeat(3,fit-content);
+    grid-template-areas:
+        "head head"
+        "formulario banner"
+        "foot foot";
+    column-gap: 20px;
+    background-image:linear-gradient(to bottom, white, #081B26 75%);
+}
+
+.Header{
+    grid-area:head;
+}
+
+.Formulario{
+    grid-area: formulario;
+}
+
+.ContenedorBanner{
+    grid-area:banner;
+    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100%;
+    background-image:radial-gradient(rgb(3, 61, 3), green);
+}
+
+.Footer{
+    grid-area:foot;
+}
+
+/* GRID coberturas */
+#grilla-coberturas{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(3,fit-content);
+    grid-template-areas:
+        "head"
+        "coberturas"
+        "foot";
+    background-image:linear-gradient(to bottom, white, #081B26 75%);
+}
+
+.Header{
+    grid-area:head;
+}
+
+.seguros{
+    grid-area: coberturas;
+}
+
+.Footer{
+    grid-area:foot;
+}
+
+/* GRID cotizaciones */
+#grilla-cotizaciones{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(4,fit-content);
+    grid-template-areas:
+        "head"
+        "multicotizador"
+        "wsp"
+        "foot";
+    background-image:linear-gradient(to bottom, white, #081B26 75%);
+}
+
+.Header{
+    grid-area:head;
+}
+
+.Multicotizador{
+    grid-area: multicotizador;
+}
+
+.BannerCotizacion{
+    grid-area: wsp;
+}
+
+.Footer{
+    grid-area:foot;
+}
+
+/* GRID nosotros */
+#grilla-nosotros{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: repeat(4,fit-content);
+    grid-template-areas:
+        "head"
+        "nosotros"
+        "ubicacion"
+        "foot";
+        background-image:linear-gradient(to bottom, white, #081B26 75%);
+}
+
+.Header{
+    grid-area:head;
+}
+
+.ContenedorNosotros{
+    grid-area: nosotros;
+}
+
+.Ubicacion{
+    grid-area: ubicacion;
+}
+
+.Footer{
+    grid-area:foot;
+}
+
+
+/* Contenedor del encabezado */
+
+.Header {
+    background-color: #348ABF;
+    background-image: url(../img/header.jpg);
+    width: 100%;
+    height: fit-content;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Encabezado{
+    margin: 10px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Encabezado__Slogan {
+    color: #081B26;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.Encabezado__Logo {
+    width: 155px;
+    margin-left: 10px;
+}
+
+.Redes{
+    display: inline-block;
+    margin-left: 40px;
+    margin-top: 16px;
+
+    
+}
+.Redes__img{
+    width: 55px;
+    height: 55px;
+}
+
+.Redes__img:hover{
+    border-style: groove;
+    border-color: #081B26;
+    border-radius: 100%;
+    transition: 0.5s;
+}
+
+/* Menu de navegacion */
+.NavBar {
+    background-color: #081B26;
+}
+
+.Menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.Menu__Elemento{
+    text-align: center;
+    list-style-type: none;
+ }
+
+/* Elementos del menu de navegacion */
+ .Menu__Elemento a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 20px;
+    padding: 1px 6px;
+}
+.Menu__Elemento a:hover{
+    background-color: white;
+    transition: 0.5s;
+    color: #081B26;
+    font-size: 26px;
+    font-weight: bold;
+    height: 31px;
+}
+
+/* Footer */
+.Footer{
+    background-color: #DAE2E4;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    border-top: 5px groove #c7cbcc;
+    flex-direction: row;
+    flex-wrap: wrap ;
+}
+
+.Footer__Img{
+    width: 120px;
+}
+
+.Footer__Texto{
+    color: #081B26;
+    font-size: 0.8rem;
+}
+
+.Footer__Texto--centro{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Footer > hr{
+    border: 1px solid black;
+    height: 60px;
+    width: 1px;
+}
+
+/* Comienzo CSS INDEX */
+
+/* CSS del carrousel de imagenes */
+.container {
+    margin: auto;
+    width:100%;
+    padding: 0px;
+}
+
+
+.Carrousel {
+    position: relative;
+    width: inherit;
+    height: 720px;
+}
+
+.Carrousel li{
+    position:absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    transition: opacity .5s;
+}
+
+.Carrousel li img {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    
+}
+
+.Carrousel li:first-child{
+    opacity: 1;
+}
+
+.Carrousel li:target{
+    opacity: 1;
+}
+
+.Slider{
+    text-align: center;
+    margin: 20px;
+}
+
+.Slider li{
+    display: inline-block;
+    text-align: center;
+}
+
+.Slider__Boton {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.Slider__Boton:hover{
+    background-color: blue;
+}
+/* FIN del CSS del carrousel de imagenes */
+
+/* CSS GRID Sub-seccion Comapñias */
+#grilla-companias{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows: repeat(3,fit-content);
+    grid-template-areas:
+        "titulo titulo titulo"
+        "logo1 logo2 logo3"
+        "texto1 texto2 texto3";
+    align-items: center;
+    justify-items: center;
+    padding: 16px 16px 16px 0px;
+    background-image:linear-gradient(to bottom, white, #081B26);
+    column-gap: 20px;
+}
+
+.Companias__Titulo{
+    grid-area: titulo;
+    font-size: 25px;
+    font-style: oblique;
+    text-align: left;
+    color: white ;
+    line-height: 30px;
+    justify-self: left;
+    padding-left: 50px;
+    padding-right: 20px;
+    background-color: #081B26;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.Companias__Img-1{
+    grid-area: logo1;
+    width: 60%;
+    padding-top: 16px;
+    padding-left: 16px;
+    transition: transform 1s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Companias__Img-1:hover{
+    transform: scale(1.25,1.25);
+}
+
+.Companias__Img-2{
+    grid-area: logo2;
+    width: 60%;
+    padding-top: 16px;
+    transition: transform 1s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Companias__Img-2:hover{
+    transform: scale(1.25,1.25);
+}
+
+.Companias__Img-3{
+    grid-area: logo3;
+    width: 60%;
+    padding-top: 16px;
+    transition: transform 1s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.Companias__Img-3:hover{
+    transform: scale(1.25,1.25);
+}
+
+.Companias__Texto-1{
+    grid-area: texto1; 
+    text-align: center;
+    color: whitesmoke ;
+    line-height: 30px;
+    padding-left: 16px;   
+}
+.Companias__Texto-2{
+    grid-area: texto2;
+    text-align: center;
+    color: whitesmoke ;
+    line-height: 30px;  
+}
+.Companias__Texto-3{
+    grid-area: texto3;
+    text-align: center;
+    color: whitesmoke ;
+    line-height: 30px;  
+}
+/* FIN Seccion Compañias */
+
+/* 3ra Seccion: banner WhatsApp */
+.BannerWp{
+    background-image:radial-gradient(rgb(3, 61, 3), green);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-style: groove;
+    border-color: #081B26;
+    border-radius: 100px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+.Banner__Texto{
+    color: white;
+    font-size: 3rem;
+    line-height: 50px;
+}
+
+.Banner__Link{
+    text-decoration: none;
+}
+
+.Banner__Img{
+    width: 125px;
+    height: 125px;
+    transition: 1s;
+}
+
+.Banner__Img:hover{
+    transform: scale(1.25,1.25);
+}
+
+/* FIN Seccion banner WhatsApp */
+
+/* FIN CSS INDEX */
+
+/* Comienzo CSS seccion COBERTURAS */
+
+.seguros{
+    height: fit-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#seguros-grilla{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,fit-content);
+    grid-template-areas:
+        "autos motos embarcaciones"
+        "vida accidentes civil"
+        "caucion comercio familiar";
+    align-items: center;
+    justify-items: center;
+    padding: 16px 16px;
+    column-gap: 20px;
+    width: fit-content;
+    
+}
+
+.autos{
+    grid-area: autos;
+}
+
+.motos{
+    grid-area: motos;
+}
+
+.embarcaciones{
+    grid-area: embarcaciones;
+}
+
+.vida{
+    grid-area: vida;
+}
+
+.accidentes{
+    grid-area: accidentes;
+}
+
+.civil{
+    grid-area: civil;
+}
+
+.caucion{
+    grid-area: caucion;
+}
+
+.comercio{
+    grid-area: comercio;
+}
+
+.familiar{
+    grid-area: familiar;
+}
+
+.coberturas{
+    padding: 16px;
+}
+
+.coberturas img{
+    width: 370px;
+    height: 250px;
+    border: 1px solid white;
+}
+.tit-seg{
+    font-size: 25px;
+    color: white;
+    background-color: #081B26;
+    width: 300px;
+    height: 50px;
+    margin-top: -25px;
+    border-radius: 50px;
+    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* FIN CSS COBERTURAS */
+
+/* COMIENZO CSS SECCION COTIZACIONES */
+
+.Multicotizador{
+    background-color: #348abf70;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.BannerCotizacion{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 16px;
+    margin: 16px 0px;
+}
+
+.BannerCotizacion__Texto{
+    color: white;
+    font-size: 50px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.BannerCotizacion__Texto:hover{
+    transform: scale(1.25);
+}
+
+.BannerCotizacion a{
+    text-decoration: none;
+}
+
+@keyframes wsp {
+    20%{background-color: #348abf70;}
+    50%{background-color: green;}
+    100%{transform: rotatey(360deg);
+    background-color: #348abf70;}
+}
+
+.BannerCotizacion__Img{
+    border-radius: 100%;
+    background-color: #348abf70;
+    width: 75%;
+    height: 75%;
+    animation-name: wsp;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 7s;
+    animation-delay: 3s;
+}
+
+/* FIN SECCION COTIZACIONES */
+
+/* COMIENZO CSS SECCION NOSOTROS */
+
+.ContenedorNosotros{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    /* background-color: #ECF1F3; */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.Equipo{
+    background-color: #348abf70;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 30px;
+    margin-left: 16px;
+    font-size: x-large;
+    line-height: normal;
+    text-align: center;
+}
+
+.Equipo ul{
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.Historia{
+    /* background-color: #ECF1F3; */
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    padding-left: 32px;
+}
+
+.Ubicacion{
+    color: white;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.Ubicacion h1{
+    color: white;
+}
+
+/* FIN SECCION NOSOTROS */
+
+/* COMIENZO CSS DE LA SECCION SINIESTRO */
+
+/* CSS del Formulario */
+
+.Formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;  
+}
+
+.FormularioSiniestro{
+    width: 70%;
+    height: fit-content;
+    background-color: #ECF1F3;
+    border-style: outset;
+    border-color: #081B26;
+    font-family: sans-serif;
+    position:relative;
+    left: 5px;
+}
+
+.FormularioSiniestro__Set{
+    background-color: white;
+}
+/* Fin Formulario */
+
+/* CSS del banner Wsp */
+.ContenedorBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.BannerSiniestro{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 10px;
+    text-align: left; 
+    display: block;
+}
+
+.BannerSiniestro__Texto{
+    line-height: 50px;
+    color: white;
+    font-size: 35px;
+    padding-right: 10px;
+    text-align: end;
+}
+
+.Wsp{
+    padding-top: 30px;
+    width: fit-content;
+    height: fit-content;
+    text-align: end;
+}
+
+.Wsp__Img{
+    width: 200px;
+    height: 200px;
+    margin-right: 16px;
+    margin-top: 50px;
+}
+
+.Wsp__Texto{
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
+    width: fit-content;
+}
+
+.Wsp__Link{
+    text-decoration: none;
+}
+
+/* Fin del banner wsp */
+
+/* FIN DE LA SECCION SINIESTRO */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px){
+    #seguros-grilla{
+        display: grid;
+        grid-template-areas:
+            "autos"
+            "motos"
+            "embarcaciones"
+            "vida"
+            "accidentes"
+            "civil"
+            "caucion"
+            "comercio"
+            "familiar";
+        align-items: center;
+        justify-items: center;
+        padding: 16px 16px;
+        column-gap: 20px;
+        width: 80vw; 
+    }
+}
