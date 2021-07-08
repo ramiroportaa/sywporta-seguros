@@ -4,101 +4,262 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala adaptable al dispositivo -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Link a css -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link a google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!-- Link a google fonts -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap del CSS -->
+
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS propio -->
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+
     <title>SyWPorta Asesores de Seguros</title> <!-- titulo de la pagina -->
 
 </head>
 
 <body> <!-- Comienzo del cuerpo -->
-    
-    <div id="grilla-coberturas">
-        <header class="Header"> <!-- Comienzo de Encabezado de pagina -->
-            <div class="Encabezado">
-                <img src="img/logo_syw.png" alt="LOGO SYWPORTA" class="Encabezado__Logo">
-                <h1 class="Encabezado__Slogan">TRANQUI ESTAMOS CON VOS</h1><!-- Slogan central -->
-                <div class="Redes">
-                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/"><img class="Redes__img" src="img/icono_face.png" alt="Face"></a>
-                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/"><img class="Redes__img" src="img/icono_insta.png" alt="Insta"></a>
-                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Redes__img" src="img/icono_wsp.png" alt="Wsp"></a> 
-                </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#"><img src="img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                <a class="nav-link" href="coberturas.html">COBERTURAS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="cotizaciones.html">COTIZACIONES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="siniestro.html">TUVE UN SINIESTRO</a>
+                </li>                
+            </ul>
+            <div class="Redes row justify-content-center">
+                <!-- Twitter -->
+<!--                 <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                </a> -->
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
             </div>
-            <nav class="NavBar"> <!-- Comienzo del menu -->
-                <ul class="Menu">
-                    <li class="Menu__Elemento"><a href="index.html">HOME</a></li>
-                    <li class="Menu__Elemento"><a href="coberturas.html">COBERTURAS</a></li>
-                    <li class="Menu__Elemento"><a href="cotizaciones.html">COTIZACIONES</a></li>
-                    <li class="Menu__Elemento"><a href="nosotros.html">NOSOTROS</a></li>
-                    <li class="Menu__Elemento"><a href="siniestro.html">TUVE UN SINIESTRO</a></li>
-                </ul>
-            </nav> <!-- Fin del menu -->    
+            </div>
+        </nav>
+    </header>
 
-        </header> <!-- Fin de Encabezado de pagina -->
+    <div class="row" style="height: 100px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
-        <!-- <main class="Contenido"> -->
-            <section class="seguros"> <!-- Tabla de coberturas -->
-                <div id="seguros-grilla">
-                    <div class="autos coberturas">
-                        <img src="img/automotor-370x250.jpeg" alt="seguros automotores">
-                        <div class="autos__titulo tit-seg">
+    <main class="Contenido">
+        <!-- 1RA SECCION: COBERTURAS -->
+        <section class="seguros">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>COBERTURAS</h2>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center align-items-center">
+
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/automotor-370x250.jpeg" alt="seguros automotores">
+                        <div class="tit-seg">
                             Automotores
                         </div>
                     </div>
-                    <div class="motos coberturas">
-                        <img src="img/motovehiculos-370x250.jpeg" alt="seguros motos">
-                        <div class="motos__titulo tit-seg">
+                    <div class=" coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/motovehiculos-370x250.jpeg" alt="seguros motos">
+                        <div class="tit-seg">
                             Motovehiculos
                         </div>
                     </div>
-                    <div class="embarcaciones coberturas">
-                        <img src="img/embarcaciones-370x250.jpeg" alt="seguros embarcaciones">
-                        <div class="embarcaciones__titulo tit-seg">Embarcaciones de placer</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/embarcaciones-370x250.jpeg" alt="seguros embarcaciones">
+                        <div class="tit-seg">Embarcaciones de placer</div>
                     </div>
-                    <div class="vida coberturas">
-                        <img src="img/vida_-370x250.jpeg" alt="seguros de vida">
-                        <div class="vida__titulo tit-seg">Seguros de Vida</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/vida_-370x250.jpeg" alt="seguros de vida">
+                        <div class="tit-seg">Seguros de Vida</div>
                     </div>
-                    <div class="accidentes coberturas">
-                        <img src="img/accidentes-personales-370x250.jpeg" alt="seguros accidentes personales">
-                        <div class="accidentes__titulo tit-seg">Accidentes Personales</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/accidentes-personales-370x250.jpeg" alt="seguros accidentes personales">
+                        <div class="tit-seg">Accidentes Personales</div>
                     </div>
-                    <div class="civil coberturas">
-                        <img src="img/responsabilidad-civil-370x250.jpeg" alt="seguros resp.civil">
-                        <div class="civil__titulo tit-seg">Responsabilidad Civil</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/responsabilidad-civil-370x250.jpeg" alt="seguros resp.civil">
+                        <div class="tit-seg">Responsabilidad Civil</div>
                     </div>
-                    <div class="caucion coberturas">
-                        <img src="img/caucion-370x250.jpeg" alt="seguros caucion">
-                        <div class="caucion__titulo tit-seg">Seguro de Caucion</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/caucion-370x250.jpeg" alt="seguros caucion">
+                        <div class="tit-seg">Seguro de Caucion</div>
                     </div>
-                    <div class="comercio coberturas">
-                        <img src="img/comercio-370x250.jpeg" alt="seguro integral de comercio">
-                        <div class="comercio__titulo tit-seg">Integral de Comercio</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/comercio-370x250.jpeg" alt="seguro integral de comercio">
+                        <div class="tit-seg">Integral de Comercio</div>
                     </div>
-                    <div class="familiar coberturas">
-                        <img src="img/familiar-1-370x250.jpeg" alt="seguros del hogar">
-                        <div class="familiar__titulo tit-seg">Seguro del Hogar y la familia</div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="img/familiar-1-370x250.jpeg" alt="seguros del hogar">
+                        <div class="tit-seg">Seguro del Hogar y la familia</div>
                     </div>
+
                 </div>
+            </div>
 
-            </section>
-        <!-- </main> -->
+        </section>
+    </main>
 
-        <footer class="Footer"> <!-- Comienzo del pie de pagina -->
-            <p class="Footer__Texto">Manuel Zavalla 102(N) <br> Rivadavia <br>SAN JUAN, ARGENTINA</p>
-            <hr>
-            <p class="Footer__Texto">Tel. 123456789</p>
-            <hr>
-            <p class="Footer__Texto">MAIL: mail@sywporta.com.ar</p>
-            <hr>
-            <p class="Footer__Texto">N° de inscripcion <br> 01234</p>
-            <hr>
-            <img class="Footer__Img" src="img/logo_ssn.png" alt="LOGO SSN">
-            <img class="Footer__Img" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA">
-            <img class="Footer__Img" src="img/logo_parana.png" alt="LOGO PARANA">
-            <img class="Footer__Img" src="img/logo_cooperacion.png" alt="LOGO COOPERACION">
-            <p class="Footer__Texto Footer__Texto--centro">Copyright 2021 - AVISO LEGAL</p>
-        </footer> <!-- Fin del pie de pagina -->
-    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mb-4">INFO</h5>
+            <p>Esta es una pagina web informativa del ASESOR, NO somos la ASEGURADORA.</p>
+            <p>N° de Inscripcion SSN: <br>0124 <br>0124 <br>0124</p>
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_ssn.png" alt="logo SSN" width="200px"></a>
+            </div>
+
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mb-4">LINKS</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <p>
+                    <a href="coberturas.html">COBERTURAS</a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="cotizaciones.html">COTIZACIONES</a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="siniestro.html">TUVE UN SINIESTRO</a>
+                </p>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Contact details -->
+            <h5 class="font-weight-bold text-uppercase mb-4">CONTACTO</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <p>
+                    <i class="fas fa-home mr-3"></i>Manuel Zavalla 102(N) - Rivadavia - SAN JUAN, ARGENTINA</p>
+                </li>
+                <li>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> sywportaseguros@gmail.com</p>
+                </li>
+                <li>
+                <p>
+                    <i class="fas fa-phone mr-3"></i>264 410 9848</p>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+    
+            <!-- Social buttons -->
+            <h5 class="font-weight-bold text-uppercase mb-4">SEGUINOS EN NUESTRAS REDES!</h5>
+    
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Twitter -->
+<!--                 <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                </a> -->
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+    
+            </div>
+            <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="https://www.instagram.com/ramiroportaa/" target="_blank"> Ramiro Porta</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+
+<!-- aqui van los scripts de js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap del JS -->
+
 </body>
 </html>

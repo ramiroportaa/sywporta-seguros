@@ -4,114 +4,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala adaptable al dispositivo -->
-    <link rel="stylesheet" href="css/style.css"> <!-- Link a css -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link a google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!-- Link a google fonts -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap del CSS -->
+
+    <link rel="stylesheet" href="css/style.css"> <!-- CSS propio -->
+
+    <!-- Font Awesome (para iconos redes)-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+
     <title>SyWPorta Asesores de Seguros</title> <!-- titulo de la pagina -->
 
 </head>
 
 <body> <!-- Comienzo del cuerpo -->
-    <div id="grilla-index">    
-        <header class="Header"> <!-- Comienzo de Encabezado de pagina -->
-            <div class="Encabezado">
-                <img src="img/logo_syw.png" alt="LOGO SYWPORTA" class="Encabezado__Logo">
-                <h1 class="Encabezado__Slogan">TRANQUI ESTAMOS CON VOS</h1><!-- Slogan central -->
-                <div class="Redes">
-                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/"><img class="Redes__img" src="img/icono_face.png" alt="Face"></a>
-                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/"><img class="Redes__img" src="img/icono_insta.png" alt="Insta"></a>
-                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Redes__img" src="img/icono_wsp.png" alt="Wsp"></a> 
-                </div>
+
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="#"><img src="img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="coberturas.html">COBERTURAS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="cotizaciones.html">COTIZACIONES</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="siniestro.html">TUVE UN SINIESTRO</a>
+                </li>                
+            </ul>
+            <div class="Redes row justify-content-center">
+                <!-- Twitter -->
+<!--                 <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                </a> -->
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
             </div>
-            <nav class="NavBar"> <!-- Comienzo del menu -->
-                <ul class="Menu">
-                    <li class="Menu__Elemento"><a href="index.html">HOME</a></li>
-                    <li class="Menu__Elemento"><a href="coberturas.html">COBERTURAS</a></li>
-                    <li class="Menu__Elemento"><a href="cotizaciones.html">COTIZACIONES</a></li>
-                    <li class="Menu__Elemento"><a href="nosotros.html">NOSOTROS</a></li>
-                    <li class="Menu__Elemento"><a href="siniestro.html">TUVE UN SINIESTRO</a></li>
-                </ul>
-            </nav> <!-- Fin del menu -->    
+            </div>
+        </nav>
+    </header>
 
-        </header> <!-- Fin de Encabezado de pagina -->
+    <div class="row" style="height: 100px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
-<!--         <main class="Contenido"> -->
-            <section class="container"> <!-- 1ra Seccion: Carrousel de imagenes -->
-                <ul class="Carrousel">
-                    <li id="slide1">
-                        <img src="img/Riv1.jpg" alt="Carrousel de imagenes">
-                    </li>
-                    <li id="slide2">
-                        <img src="xxx" alt="Carrousel de imagenes">
-                    </li>
-                    <li id="slide3">
-                        <img src="xxx" alt="Carrousel de imagenes">
-                    </li>
-                    <li id="slide4">
-                        <img src="xxx" alt="Carrousel de imagenes">
-                    </li>
-                    <li id="slide5">
-                        <img src="img/Riv1.jpg" alt="Carrousel de imagenes">
-                    </li>
-                </ul>
+    <main>
+    <!-- 1RA SECCION: CAROUSEL CON BOOTSTRAP -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
 
-                <nav>
-                    <ul class="Slider">
-                        <li><a class="Slider__Boton" href="#slide1"></a></li>
-                        <li><a class="Slider__Boton" href="#slide2"></a></li>
-                        <li><a class="Slider__Boton" href="#slide3"></a></li>
-                        <li><a class="Slider__Boton" href="#slide4"></a></li>
-                        <li><a class="Slider__Boton" href="#slide5"></a></li>
-                    </ul>
-                </nav>
-            </section>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/familiar-1-370x250.jpeg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU CASA">
+            <div class="carousel-caption">
+              <h1>ASEGURA TU CASA</h1>
+              <p>Solicita cotizacion ahora! No corras mas riesgo.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/automotor-370x250.jpeg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU AUTO">
+            <div class="carousel-caption">
+              <h1>ASEGURA TU VEHICULO</h1>
+              <p>Asesorate con nosotros y quedate tranqui!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/comercio-370x250.jpeg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU COMERCIO">
+            <div class="carousel-caption">
+              <h1>ASEGURA TU COMERCIO</h1>
+              <p>Quedate tranquilo, nosotros cuidamos de lo tuyo.</p>
+            </div>
+          </div>
+        </div>
 
-            <section class="Companias" id="grilla-companias"> <!-- 2da Seccion: Compañias -->
-                <h1 class="Companias__Titulo">COMPAÑIAS <br>
-                    ASEGURADORAS
-                </h1>
-                <a href="http://www.segurosrivadavia.com/" target="_blank"><img class="Companias__Img-1" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA"></a>
-                <a href="http://www.paranaseguros.com.ar/" target="_blank"><img class="Companias__Img-2" src="img/logo_parana.png" alt="LOGO PARANA"></a>
-                <a href="https://www.cooperacionseguros.com.ar/" target="_blank"><img class="Companias__Img-3" src="img/logo_cooperacion.png" alt="LOGO COOPERACION"></a>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
 
-                <p class="Companias__Texto-1">SEGUROS BERNARDINO RIVADAVIA: <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!
-                </p>
-                <p class="Companias__Texto-2">PARANA SEGUROS: <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum architecto, dignissimos aut temporibus molestiae exercitationem inventore repellat vel rerum aperiam.
-                </p>
-                <p class="Companias__Texto-3"> MUTUAL COOPERACION SEGUROS: <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum architecto, dignissimos aut temporibus molestiae exercitationem inventore repellat vel rerum aperiam.
-                </p>
-
-            </section>
-
-            <section class="Banner"> <!-- 3ra Seccion: Banner whatsapp -->
-                <div class="BannerWp">
-                    <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><h1 class="Banner__Texto"> Pedi cotizacion y asesoramiento por WhatsApp</h1></a>
-                    <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><img class="Banner__Img" src="img/icono_wsp.png" alt="Wsp"></a> 
-                </div>
-
-            </section> 
-
-<!--         </main> -->
-
-        
-        <footer class="Footer"> <!-- Comienzo del pie de pagina -->
-            <p class="Footer__Texto">Manuel Zavalla 102(N) <br> Rivadavia <br>SAN JUAN, ARGENTINA</p>
-            <hr>
-            <p class="Footer__Texto">Tel. 123456789</p>
-            <hr>
-            <p class="Footer__Texto">MAIL: mail@sywporta.com.ar</p>
-            <hr>
-            <p class="Footer__Texto">N° de inscripcion <br> 01234</p>
-            <hr>
-            <img class="Footer__Img" src="img/logo_ssn.png" alt="LOGO SSN">
-            <img class="Footer__Img" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA">
-            <img class="Footer__Img" src="img/logo_parana.png" alt="LOGO PARANA">
-            <img class="Footer__Img" src="img/logo_cooperacion.png" alt="LOGO COOPERACION">
-            <p class="Footer__Texto Footer__Texto--centro">Copyright 2021 - AVISO LEGAL</p>
-        </footer> <!-- Fin del pie de pagina -->
     </div>
+
+    <!-- 2DA SECCION: COMPAÑIAS -->
+    <section class="Companias container-fluid">
+        <div class="row">
+            <h1 class="Companias__Titulo">COMPAÑIAS <br>
+                ASEGURADORAS
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="http://www.segurosrivadavia.com/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA"></a>
+                <h5 class="Companias__Texto">SEGUROS BERNARDINO RIVADAVIA: <br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!</span>
+                </h5>
+            </div>
+            <div class="col-md-4">
+                <a href="http://www.paranaseguros.com.ar/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_parana.png" alt="LOGO PARANA"></a>
+                <h5 class="Companias__Texto">PARANA SEGUROS: <br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!</span>
+                </h5>
+            </div>
+            <div class="col-md-4">
+                <a href="https://www.cooperacionseguros.com.ar/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_cooperacion.png" alt="LOGO COOPERACION"></a>
+                <h5 class="Companias__Texto">COOPERACION SEGUROS: <br>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!</span>
+                </h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3RA SECCION: BANNER WHATSAPP -->
+    <section class="Banner row justify-content-center align-items-center"> 
+        <div class="BannerWp row align-items-center">
+            <div class="col-md-8">
+                <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><h1 class="Banner__Texto text-center"> Pedi cotizacion y asesorate por WhatsApp</h1></a>
+            </div>
+            <div class="col-md-4">
+                <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><img class="Banner__Img mx-auto d-block" src="img/icono_wsp.png" alt="Wsp"></a> 
+            </div>
+        </div>
+    </section> 
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Content -->
+            <h5 class="font-weight-bold text-uppercase mb-4">INFO</h5>
+            <p>Esta es una pagina web informativa del ASESOR, NO somos la ASEGURADORA.</p>
+            <p>N° de Inscripcion SSN: <br>0124 <br>0124 <br>0124</p>
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_ssn.png" alt="logo SSN" width="200px"></a>
+            </div>
+
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Links -->
+            <h5 class="font-weight-bold text-uppercase mb-4">LINKS</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <p>
+                    <a href="coberturas.html">COBERTURAS</a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="cotizaciones.html">COTIZACIONES</a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="nosotros.html">NOSOTROS</a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <a href="siniestro.html">TUVE UN SINIESTRO</a>
+                </p>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+    
+            <!-- Contact details -->
+            <h5 class="font-weight-bold text-uppercase mb-4">CONTACTO</h5>
+    
+            <ul class="list-unstyled">
+                <li>
+                <p>
+                    <i class="fas fa-home mr-3"></i>Manuel Zavalla 102(N) - Rivadavia - SAN JUAN, ARGENTINA</p>
+                </li>
+                <li>
+                <p>
+                    <i class="fas fa-envelope mr-3"></i> sywportaseguros@gmail.com</p>
+                </li>
+                <li>
+                <p>
+                    <i class="fas fa-phone mr-3"></i>264 410 9848</p>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+    
+            <!-- Social buttons -->
+            <h5 class="font-weight-bold text-uppercase mb-4">SEGUINOS EN NUESTRAS REDES!</h5>
+    
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <!-- Twitter -->
+<!--                 <a type="button" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
+                </a> -->
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+    
+            </div>
+            <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2021 Copyright:
+        <a href="https://www.instagram.com/ramiroportaa/" target="_blank"> Ramiro Porta</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+
+
+<!-- aqui van los scripts de js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap del JS -->
+
 </body> <!-- Fin de cuerpo -->
 </html> <!-- Fin de la web -->
