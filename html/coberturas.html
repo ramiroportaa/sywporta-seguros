@@ -7,11 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link a google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!-- Link a google fonts -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap del CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!--Bootstrap del CSS -->
 
-    <link rel="stylesheet" href="css/style.css"> <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- CSS propio -->
 
-    <!-- Font Awesome (para iconos redes) -->
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 
     <title>SyWPorta Asesores de Seguros</title> <!-- titulo de la pagina -->
@@ -23,22 +23,22 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar-brand" href="#"><img src="img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
+            <a class="navbar-brand" href="#"><img src="../img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../index.html">HOME<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                 <a class="nav-link" href="coberturas.html">COBERTURAS</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="cotizaciones.html">COTIZACIONES</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
@@ -69,35 +69,65 @@
 
     <div class="row" style="height: 100px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
-    <main class="Contenido container-fluid">
-        <div class="row ContenedorNosotros justify-content-center">
-            <section class="Equipo col col-sm-3">
-                <h1>NUESTRO EQUIPO:</h1>
-                <ul>
-                    <li>CEO: Wilfredo Porta</li>
-                    <li>PRODUCTOR: Sonia Agüero</li>
-                    <li>PRODUCTOR: Ramiro Porta</li>
-                    <li>PRODUCTOR: Leandro Porta</li>
-                    <li>SECRETARIA: Emilia Navarro</li>
-                </ul>
-            </section>
+    <main class="Contenido">
+        <!-- 1RA SECCION: COBERTURAS -->
+        <section class="seguros">
 
-            <section class="Historia col col-sm-7">
-                <h1>HISTORIA</h1>
-                <p>Día a día llevamos adelante este arduo trabajo para brindarle a usted: respaldo, servicio, tranquilidad y la mejor atención.
-                   <br>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ducimus porro dolorum et fuga laboriosam atque maiores ipsam, eligendi harum voluptatibus tempora, ea, temporibus minus reprehenderit tempore expedita accusamus qui cum numquam voluptates doloribus ad eaque fugiat. Corrupti nam ipsum amet. Ipsam, amet sint sequi quod beatae impedit! Tempore, minus.
-                </p>
-            </section>
-        </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>COBERTURAS</h2>
+                        <hr>
+                    </div>
+                </div>
+                
+                <div class="row justify-content-center align-items-center">
 
-        <div class="row">
-            <section class="Ubicacion col">
-                <h1>NUESTRA UBICACION</h1>
-                <p>Manuel Zavalla 102 (N) - Rivadavia, San Juan</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d850.2223220845217!2d-68.5784453707446!3d-31.527200555688456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968141067167c8ef%3A0xa7c383e8756d584f!2sSyW%20Porta%20(Productores%20Asesores%20de%20Seguros)!5e0!3m2!1ses!2sar!4v1623039093878!5m2!1ses!2sar" width="100%" height="450" style="border:0; padding: 10px 10px 10px 10px;" allowfullscreen="" loading="lazy"></iframe>
-            </section>
-        </div>   
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/automotor-370x250.jpeg" alt="seguros automotores">
+                        <div class="tit-seg">
+                            Automotores
+                        </div>
+                    </div>
+                    <div class=" coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/motovehiculos-370x250.jpeg" alt="seguros motos">
+                        <div class="tit-seg">
+                            Motovehiculos
+                        </div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/embarcaciones-370x250.jpeg" alt="seguros embarcaciones">
+                        <div class="tit-seg">Embarcaciones de placer</div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/vida_-370x250.jpeg" alt="seguros de vida">
+                        <div class="tit-seg">Seguros de Vida</div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/accidentes-personales-370x250.jpeg" alt="seguros accidentes personales">
+                        <div class="tit-seg">Accidentes Personales</div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/responsabilidad-civil-370x250.jpeg" alt="seguros resp.civil">
+                        <div class="tit-seg">Responsabilidad Civil</div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/caucion-370x250.jpeg" alt="seguros caucion">
+                        <div class="tit-seg">Seguro de Caucion</div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/comercio-370x250.jpeg" alt="seguro integral de comercio">
+                        <div class="tit-seg">Integral de Comercio</div>
+                    </div>
+                    <div class="coberturas col col-md-4">
+                        <img class="mx-auto d-block" src="../img/familiar-1-370x250.jpeg" alt="seguros del hogar">
+                        <div class="tit-seg">Seguro del Hogar y la familia</div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <!-- Footer -->
@@ -116,7 +146,7 @@
             <h5 class="font-weight-bold text-uppercase mb-4">INFO</h5>
             <p>Esta es una pagina web informativa del ASESOR, NO somos la ASEGURADORA.</p>
             <p>N° de Inscripcion SSN: <br>0124 <br>0124 <br>0124</p>
-            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_ssn.png" alt="logo SSN" width="200px"></a>
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="../img/logo_ssn.png" alt="logo SSN" width="200px"></a>
             </div>
 
             <!-- Grid column -->
@@ -224,11 +254,12 @@
     
     </footer>
     <!-- Footer -->
-    
+
+
 <!-- aqui van los scripts de js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap del JS -->
+<script src="../js/bootstrap.min.js"></script> <!-- Bootstrap del JS -->
 
 </body>
 </html>

@@ -7,9 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link a google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!-- Link a google fonts -->
 
-    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap del CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> <!--Bootstrap del CSS -->
 
-    <link rel="stylesheet" href="css/style.css"> <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/style.css"> <!-- CSS propio -->
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
@@ -19,29 +19,29 @@
 </head>
 
 <body> <!-- Comienzo del cuerpo -->
-    
+
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar-brand" href="#"><img src="img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
+            <a class="navbar-brand" href="#"><img src="../img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../index.html">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="coberturas.html">COBERTURAS</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                 <a class="nav-link" href="cotizaciones.html">COTIZACIONES</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">NOSOTROS</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                 <a class="nav-link" href="siniestro.html">TUVE UN SINIESTRO</a>
                 </li>                
             </ul>
@@ -69,23 +69,104 @@
 
     <div class="row" style="height: 100px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
-    <main class="Contenido">
-        <div class="container-fluid">
-            <section class="Multicotizador">
-                <h1>PROXIMAMENTE MULTICOTIZADOR AUTOMOTOR ONLINE</h1>
-                <h2>PODES SOLICITAR COTIZACION DE CUALQUIER TIPO DE SEGURO VIA WHATSAPP</h2>
-                <h3>NO DUDES EN CONSULTARNOS, NOSOTROS TE ASESORAMOS!</h3>
+        <main class="Contenido container-fluid">
+            <div class="row">
+                <h1 class="info">El siguiente formulario es solo para denunciar un siniestro AUTOMOTOR. <br>
+                    Si queres denunciar un siniestro de OTRO RAMO, contactanos via WhatsApp o mail.
+                </h1>
+            <section class="col col-md-8 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
+                <form class="FormularioSiniestro" action="enviar.php" method="POST" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>INFORMAR UN SINIESTRO AUTOMOTOR</legend>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del ASEGURADO</legend>
+                            <label for="nya_asegurado"> Nombre y Apellido </label>
+                            <input type="text" name="nya_asegurado" maxlength="100">
+                            <br>
+                            <label for="dni_asegurado"> DNI </label>
+                            <input type="text" name="dni_asegurado" maxlength="100">
+                            <br>
+                            <label for="tel_asegurado"> Tel/Cel. </label>
+                            <input type="tel" name="tel_asegurado" maxlength="14">
+                            <br>
+                            <label for="mail_asegurado"> E-Mail </label>
+                            <input type="email" name="mail_asegurado">
+                            <br>
+                            <label for="compa_asegurado">Compañia Aseguradora</label>
+                            <select name="compa_asegurado">
+                                <option value="Rivadavia">SEGUROS RIVADAVIA</option>
+                                <option value="Cooperacion">COOPERACION MUTUAL</option>
+                                <option value="Parana">PARANA S.A.</option>
+                            </select>
+                            <br>
+                            <label for="patente_asegurado">Patente</label>
+                            <input type="text" name="patente_asegurado" maxlength="20">
+                            <br>
+                        </fieldset>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del CONDUCTOR <small>(Solo si difiere del asegurado)</small></legend>
+                            <label for="nya_conductor"> Nombre y Apellido </label>
+                            <input type="text" name="nya_conductor" maxlength="100">
+                            <br>
+                            <label for="dni_conductor"> DNI </label>
+                            <input type="text" name="dni_conductor" maxlength="100">
+                            <br>
+                            <label for="tel_conductor"> Tel/Cel. </label>
+                            <input type="tel" name="tel_conductor" maxlength="14">
+                            <br>
+                        </fieldset>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del TERCERO <small>(En caso de existir)</small></legend>
+                            <label for="nya_tercero"> Nombre y Apellido </label>
+                            <input type="text" name="nya_tercero" maxlength="100">
+                            <br>
+                            <label for="dni_tercero"> DNI </label>
+                            <input type="text" name="dni_tercero" maxlength="100">
+                            <br>
+                            <label for="tel_tercero"> Tel/Cel. </label>
+                            <input type="tel" name="tel_tercero" maxlength="14">
+                            <br>
+                            <label for="vehiculo_tercero"> Vehiculo (Marca y modelo)</label>
+                            <input type="text" name="vehiculo_tercero" maxlength="200">
+                            <br>
+                            <label for="patente_tercero">Patente</label>
+                            <input type="text" name="patente_tercero" maxlength="20">
+                            <br>
+                            <label for="compa_tercero"> Compañia Aseguradora </label>
+                            <input type="text" name="compa_tercero" maxlength="100">
+                            <br>
+                        </fieldset>
+                        <fieldset class="FormularioSiniestro__Set">
+                            <legend>Informacion del Siniestro</legend>
+                            <label for="fechahora">Fecha y Hora</label>
+                            <input type="datetime-local" name="fechahora">
+                            <br>
+                            <label for="lugar"> Lugar (Calle, Altura, Ciudad)</label>
+                            <input type="text" name="lugar" maxlength="200">
+                            <br>
+                            <textarea  name="sugerencias" cols="30" rows="10" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
+                            <br>
+                        </fieldset class="FormularioSiniestro__Set">
+                        <label for="newsletter">Desea recibir el newsletter?</label>
+                        <input type="checkbox" name="newsletter" value="1">
+                        <br>
+                        <input type="submit" name="submit" value="Enviar">
+                        <input type="reset" name="reset" value="Limpiar">
+                    </fieldset>
+            
+                </form>
             </section>
-            <section class="row BannerCotizacion">
-                <div class="col col-md-4">
-                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="BannerCotizacion__Img" src="img/icono_wsp.png" alt="Wsp"></a>
-                </div>
-                <div class="col col-md-4">
-                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><h1 class="BannerCotizacion__Texto">SOLICITA COTIZACION YA!</h1></a>
-                </div> 
+            <section class="col col-md-4 ContenedorBanner"> <!-- 2da seccion: banner wsp -->
+
+                    <h1 class="BannerSiniestro__Texto">Tuviste un siniestro de OTRO RAMO?</h1>
+                    <h2 class="Wsp__Texto">(Embarcaciones, Bicicletas, Vida, Accidentes personales, Hogar, etc)</h2>
+                    <div class="Wsp">
+                        <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><h3 class="Wsp__Texto">Contactanos por WhatsApp y te asesoramos!</h3></a>
+                        <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Wsp__Img" src="../img/icono_wsp.png" alt="Wsp"></a>
+                    </div>
             </section>
-        </div>
-    </main>
+            </div>
+        </main>
 
     <!-- Footer -->
     <footer class="page-footer font-small mdb-color lighten-3 pt-4">
@@ -103,7 +184,7 @@
             <h5 class="font-weight-bold text-uppercase mb-4">INFO</h5>
             <p>Esta es una pagina web informativa del ASESOR, NO somos la ASEGURADORA.</p>
             <p>N° de Inscripcion SSN: <br>0124 <br>0124 <br>0124</p>
-            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_ssn.png" alt="logo SSN" width="200px"></a>
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="../img/logo_ssn.png" alt="logo SSN" width="200px"></a>
             </div>
 
             <!-- Grid column -->
@@ -215,8 +296,7 @@
 <!-- aqui van los scripts de js -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script> <!-- Bootstrap del JS -->
-
+<script src="../js/bootstrap.min.js"></script> <!-- Bootstrap del JS -->
 
 </body>
 </html>
