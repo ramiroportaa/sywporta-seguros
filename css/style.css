@@ -1,398 +1,391 @@
-/* CSS GENERAL*/
+@charset "UTF-8";
+/* CSS GENERAL */
+/* COLORES REDES*/
+/* COLORES TEMA */
 html {
-    position: relative;
+  position: relative;
 }
+
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* CSS del BODY*/
 body {
-    background-color: white;
-    font-family: 'Oswald', sans-serif;
-    line-height: 1.6rem;
-    margin: 0;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  line-height: 1.6rem;
+  margin: 0;
 }
 
-/* CSS de los H*/
-h1 {color: white;
+h1 {
+  color: white;
 }
 
-main.Contenido{
-    background-image:linear-gradient(to bottom, white, #081B26 75%);
+main.Contenido {
+  background-image: linear-gradient(to bottom, white, #081B26 75%);
 }
 
+/* IMPORTACIONES */
 /* Menu de navegacion */
-
-.navbar{
-    background-image: url(../img/header.jpg);
+.navbar {
+  background-color: #077fb1;
 }
 
-.Redes{
-    margin-right: 8px;
+.Redes {
+  margin-right: 8px;
+}
+.Redes a {
+  width: 50px;
+  text-align: end;
+  font-size: 40px;
 }
 
-.Redes a{
-    width: 55px;
+.btn-redes {
+  font-size: 50px;
+  color: white;
+}
+.btn-redes:hover {
+  text-decoration: none;
+  color: #081B26;
 }
 
 .navbar-toggler:hover, .navbar-toggler:focus {
-    background-color: #081B26;
+  background-color: #081B26;
 }
 
 .nav-link {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+  text-align: center;
 }
-
-.nav-link:hover, .nav-link:focus {
-    background-size: 100% 2px;
+.nav-link:hover {
+  background-size: 100% 2px;
+}
+.nav-link:focus {
+  background-size: 100% 2px;
 }
 
 /* Footer */
-
-.page-footer{
-    background-color: #929fba;
-    color: white;
+.page-footer {
+  background-color: #929fba;
+  color: white;
+}
+.page-footer a {
+  color: white;
 }
 
-.page-footer a{
-    color: white;
+.footer-copyright {
+  background-color: #7383a6;
 }
 
-.footer-copyright{
-    background-color: #757f95;
+.btn-twitter {
+  font-size: 50px;
+  color: white;
+}
+.btn-twitter:hover {
+  text-decoration: none;
+  color: #55acee;
 }
 
-.btn-redes{
-    font-size: 50px;
-    color: white;
+.btn-face {
+  font-size: 50px;
+  color: white;
+}
+.btn-face:hover {
+  text-decoration: none;
+  color: #3a5795;
 }
 
-.btn-redes:hover{
-    text-decoration: none;
-    color: #081B26;
+.btn-insta {
+  font-size: 50px;
+  color: white;
+}
+.btn-insta:hover {
+  text-decoration: none;
+  color: #5B51D8;
 }
 
+.btn-wsp {
+  font-size: 50px;
+  color: white;
+}
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #075E54;
+}
 
 /* Comienzo CSS INDEX */
-
-
 /* CAROUSEL DE IMAGENES */
-.carousel-caption{
-    background-color: #081b2654;
+.carousel-caption {
+  background-color: rgba(8, 27, 38, 0.3);
 }
 
-.Carrousel__Img{
-    max-height: 500px;
+.Carrousel__Img {
+  max-height: 500px;
 }
 
 /* CSS Sub-seccion Comapñias */
-
-.Companias{
-    margin-top: 16px;
-    background-image:linear-gradient(to bottom, white, #081B26 75%);
+.Companias {
+  margin-top: 16px;
+  background-image: linear-gradient(to bottom, white, #081B26 75%);
 }
-
-
-.Companias__Titulo{
-    font-size: 25px;
-    font-style: oblique;
-    text-align: left;
-    color: white ;
-    line-height: 30px;
-    justify-self: left;
-    padding-left: 50px;
-    padding-right: 20px;
-    background-color: #081B26;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 20px;
+.Companias__Titulo {
+  font-size: 25px;
+  font-style: oblique;
+  text-align: left;
+  color: white;
+  line-height: 30px;
+  justify-self: left;
+  padding-left: 50px;
+  padding-right: 20px;
+  background-color: #081B26;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
-.Companias__Img{
-    padding-top: 16px;
-    transition: transform 1s;
-    width: 90%;
-    max-width: 240px;
+.Companias__Img {
+  padding-top: 16px;
+  transition: transform 1s;
+  width: 90%;
+  max-width: 240px;
 }
-
-.Companias__Img:hover{
-    transform: scale(1.25,1.25);
+.Companias__Img:hover {
+  transform: scale(1.25, 1.25);
 }
-
-.Companias__Texto{ 
-    text-align: center;
-    color: whitesmoke ;
-    line-height: 30px;  
-    padding-top: 16px;
+.Companias__Texto {
+  text-align: center;
+  color: whitesmoke;
+  line-height: 30px;
+  padding-top: 16px;
 }
-
-/* FIN Seccion Compañias */
 
 /* 3ra Seccion: banner WhatsApp */
-.Banner{
-    background-color: #081B26;
-    padding: 10px 20px;
+.Banner {
+  background-color: #081B26;
+  padding: 10px 20px;
+}
+.Banner__Texto {
+  color: white;
+  font-size: 3rem;
+  line-height: 50px;
+}
+.Banner__Link {
+  text-decoration: none;
+}
+.Banner__Img {
+  width: 125px;
+  height: 125px;
+  transition: 1s;
+}
+.Banner__Img:hover {
+  transform: scale(1.25, 1.25);
 }
 
-.BannerWp{
-    background-image:radial-gradient(rgb(3, 61, 3), green);
-    max-width: 1300px;
-    padding: 30px;
-    border-style: groove;
-    border-color: #081B26;
-    border-radius: 100px;
-    margin: 16px;
-    overflow: hidden;
+.BannerWp {
+  background-image: radial-gradient(#25D366, #075E54);
+  max-width: 1300px;
+  padding: 30px;
+  border-style: groove;
+  border-color: #081B26;
+  border-radius: 100px;
+  margin: 16px;
+  overflow: hidden;
 }
-
-.Banner__Texto{
-    color: white;
-    font-size: 3rem;
-    line-height: 50px;
-}
-
-.Banner__Link{
-    text-decoration: none;
-}
-
-.Banner__Img{
-    width: 125px;
-    height: 125px;
-    transition: 1s;
-}
-
-.Banner__Img:hover{
-    transform: scale(1.25,1.25);
-}
-
-/* FIN Seccion banner WhatsApp */
-
-/* FIN CSS INDEX */
 
 /* Comienzo CSS seccion COBERTURAS */
-
-.seguros{
-    padding-bottom: 16px;
+.seguros {
+  padding-bottom: 16px;
 }
 
-.coberturas{
-    padding-top: 16px;
+.coberturas {
+  padding-top: 16px;
+}
+.coberturas img {
+  border: 1px solid white;
+  max-width: 370px;
+  width: 90%;
+}
+.coberturas__tit-seg {
+  font-size: 25px;
+  color: white;
+  background-color: #081B26;
+  width: 300px;
+  height: 50px;
+  margin-top: -25px;
+  border-radius: 50px;
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.coberturas img{
-    border: 1px solid white;
-    max-width: 370px;
-    width: 90%;
-}
-.tit-seg{
-    font-size: 25px;
-    color: white;
-    background-color: #081B26;
-    width: 300px;
-    height: 50px;
-    margin-top: -25px;
-    border-radius: 50px;
-    border: 1px solid white;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* COMIENZO CSS COTIZACIONES */
+.Multicotizador {
+  background-color: #929fba;
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 16px;
 }
 
-/* FIN CSS COBERTURAS */
-
-/* COMIENZO CSS SECCION COTIZACIONES */
-
-.Multicotizador{
-    background-color: #929fba;
-    text-align: center;
-    width: 100%;
-    height: fit-content;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding: 16px;
+.BannerCotizacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 16px;
+  margin: 16px 0px;
 }
-
-.BannerCotizacion{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 16px;
-    margin: 16px 0px;
+.BannerCotizacion a {
+  text-decoration: none;
 }
-
-.BannerCotizacion__Texto{
-    color: white;
-    font-size: 50px;
-    line-height: 50px;
-    margin-top: 16px;
+.BannerCotizacion__Texto {
+  color: white;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 16px;
 }
-
-.BannerCotizacion__Texto:hover{
-    transform: scale(1.25);
+.BannerCotizacion__Texto:hover {
+  transform: scale(1.25);
 }
-
-.BannerCotizacion a{
-    text-decoration: none;
+.BannerCotizacion__Img {
+  border-radius: 100%;
+  background-color: #075E54;
+  width: 75%;
+  height: 75%;
+  animation-name: wsp;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 7s;
+  animation-delay: 3s;
 }
 
 @keyframes wsp {
-    20%{background-color: #348abf70;}
-    50%{background-color: green;}
-    100%{transform: rotatey(360deg);
-    background-color: #348abf70;}
+  20% {
+    background-color: #075E54;
+  }
+  50% {
+    background-color: #25D366;
+  }
+  100% {
+    transform: rotatey(360deg);
+    background-color: #075E54;
+  }
 }
-
-.BannerCotizacion__Img{
-    border-radius: 100%;
-    background-color: #348abf70;
-    width: 75%;
-    height: 75%;
-    animation-name: wsp;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 7s;
-    animation-delay: 3s;
-}
-
-/* FIN SECCION COTIZACIONES */
-
 /* COMIENZO CSS SECCION NOSOTROS */
-
-.ContenedorNosotros{
-    /* background-color: #ECF1F3; */
-    margin-top: 16px;
-    margin-bottom: 16px;
+.ContenedorNosotros {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.ContenedorNosotros h1 {
+  text-shadow: 0 0 10px #000;
 }
 
-.Equipo{
-    background-image: url(../img/header.jpg);
-    padding: 10px 10px 10px 10px;
-    border-radius: 30px;
-    line-height: normal;
-    text-align: center;
-    font-size: 20px;
-    height: min-content;
-    align-self: center;
-    box-shadow: 0 0 10px white;
+.Equipo {
+  background-color: rgba(7, 127, 177, 0.8);
+  padding: 10px 10px 10px 10px;
+  border-radius: 30px;
+  line-height: normal;
+  text-align: center;
+  font-size: 20px;
+  height: min-content;
+  align-self: center;
+  box-shadow: 0 0 10px white;
+}
+.Equipo ul {
+  list-style-type: square;
+  list-style-position: outside;
 }
 
-.Equipo ul{
-    list-style-type: square;
-    list-style-position: outside;
+.Historia {
+  padding: 10px 10px 10px 10px;
+  padding-left: 32px;
+  margin-right: 16px;
 }
 
-.Historia{
-    /* background-color: #ECF1F3; */
-    padding: 10px 10px 10px 10px;
-    padding-left: 32px;
-    margin-right: 16px;
+.Ubicacion {
+  color: white;
+  width: 100%;
+  height: fit-content;
+  text-align: center;
 }
-
-.ContenedorNosotros h1{
-    text-shadow:
-    0 0 10px #000;
+.Ubicacion h1 {
+  color: white;
+  text-shadow: 0 0 10px #000;
 }
-
-.Ubicacion{
-    color: white;
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-}
-
-.Ubicacion h1{
-    color: white;
-    text-shadow:
-    0 0 10px #000;
-}
-
-/* FIN SECCION NOSOTROS */
 
 /* COMIENZO CSS DE LA SECCION SINIESTRO */
-
-.info{
-    background-color: #929fba;
-    width: 100%;
-    margin-top: 16px;
+.info {
+  background-color: #929fba;
+  width: 100%;
+  margin-top: 16px;
 }
 
-/* CSS del Formulario */
-
-.Formulario{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    margin-bottom: 16px;  
+.Formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
-.FormularioSiniestro{
-    background-color: #ECF1F3;
-    border-style: outset;
-    border-color: #081B26;
+.FormularioSiniestro {
+  background-color: #ECF1F3;
+  border-style: outset;
+  border-color: #081B26;
+}
+.FormularioSiniestro__Set {
+  background-color: white;
 }
 
-.FormularioSiniestro__Set{
-    background-color: white;
-}
-/* Fin Formulario */
-
-/* CSS del banner Wsp */
-
-.ContenedorBanner{
-    background-image:radial-gradient(rgb(3, 61, 3), green);
-    height: min-content;
-    align-self: center;
-    box-shadow: 0 0 20px white;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding: 16px;
+.ContenedorBanner {
+  background-image: radial-gradient(#25D366, #075E54);
+  height: min-content;
+  align-self: center;
+  box-shadow: 0 0 20px white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 16px;
 }
 
-.BannerSiniestro__Texto{
-    line-height: 50px;
-    color: white;
-    font-size: 30px;
-    padding-right: 10px;
-    text-align: end;
-    text-decoration: underline wavy white;
+.BannerSiniestro__Texto {
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+  padding-right: 10px;
+  text-align: end;
+  text-decoration: underline wavy white;
 }
 
-.Wsp{
-    padding-top: 30px;
-    width: fit-content;
-    height: fit-content;
-    text-align: end;
+.Wsp {
+  padding-top: 30px;
+  width: fit-content;
+  height: fit-content;
+  text-align: end;
+}
+.Wsp__Img {
+  width: 200px;
+  height: 200px;
+  margin-right: 16px;
+  margin-top: 30px;
+}
+.Wsp__Texto {
+  color: white;
+  font-size: 30px;
+  line-height: 30px;
+  width: fit-content;
+  text-align: end;
+}
+.Wsp__Link {
+  text-decoration: none;
 }
 
-.Wsp__Img{
-    width: 200px;
-    height: 200px;
-    margin-right: 16px;
-    margin-top: 30px;
-}
-
-.Wsp__Texto{
-    color: white;
-    font-size: 30px;
-    line-height: 30px;
-    width: fit-content;
-    text-align: end;
-}
-
-.Wsp__Link{
-    text-decoration: none;
-}
-
-/* Fin del banner wsp */
-
-/* FIN DE LA SECCION SINIESTRO */
+/*# sourceMappingURL=style.css.map */

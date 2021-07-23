@@ -1,0 +1,38 @@
+/* Menu de navegacion */
+.navbar {
+	background-color:$header;
+}
+.Redes {
+	margin-right: 8px;
+	a {
+		width: 50px;
+		text-align: end;
+		font-size: 40px;
+	}
+}
+.btn-redes {
+	font-size: 50px;
+	color: white;
+	&:hover {
+		text-decoration: none;
+		color: $background-general;
+	}
+}
+.navbar-toggler:hover, .navbar-toggler:focus {
+	background-color: $background-general;
+}
+.nav-link {
+	text-decoration: none;
+	background-image: linear-gradient(currentColor, currentColor);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	background-size: 0% 2px;
+	transition: background-size .3s;
+	text-align: center;
+    &:hover {
+        background-size: 100% 2px;
+    }
+    &:focus {
+        background-size: 100% 2px;
+    }
+}

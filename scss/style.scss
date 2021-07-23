@@ -1,0 +1,33 @@
+/* CSS GENERAL */
+@import "variables";
+
+html {
+	position: relative;
+}
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: white;
+	font-family: 'Oswald', sans-serif;
+	line-height: 1.6rem;
+	margin: 0;
+}
+h1 {
+	color: white;
+}
+main {
+	&.Contenido {
+		background-image: linear-gradient(to bottom, white, $background-general 75%);
+	}
+}
+
+/* IMPORTACIONES */
+@import "header";
+@import "footer";
+@import "index";
+@import "coberturas";
+@import "cotizaciones";
+@import "nosotros";
+@import "siniestro";

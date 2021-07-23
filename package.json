@@ -1,0 +1,23 @@
+{
+  "name": "syw-porta",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramiroportaa/sywporta-seguros.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramiroportaa/sywporta-seguros/issues"
+  },
+  "homepage": "https://github.com/ramiroportaa/sywporta-seguros#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
