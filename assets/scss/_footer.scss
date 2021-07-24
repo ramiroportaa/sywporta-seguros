@@ -1,0 +1,29 @@
+/* Footer */
+.page-footer {
+	background-color: $footer;
+	color: white;
+	a {
+		color: white;
+	}
+}
+.footer-copyright {
+	background-color: darken($footer, 10);
+}
+
+$redes: (
+        twitter: $color-twitter,
+        face:  $color-face,
+        insta: $color-insta--blue,
+		wsp: $color-wsp--dark
+); 
+
+@each $red, $color in $redes {
+   	.btn-#{$red} {
+		font-size: 50px;
+		color: white;	 
+		&:hover {
+			text-decoration: none;
+			color: $color;
+		}
+   }
+}
