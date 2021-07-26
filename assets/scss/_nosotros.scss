@@ -2,7 +2,7 @@
 .ContenedorNosotros {
 	margin-top: 16px;
 	margin-bottom: 16px;
-	h1 {
+	h2 {
 		text-shadow: 0 0 10px #000;
 	}
 }
@@ -25,13 +25,18 @@
 	padding: 10px 10px 10px 10px;
 	padding-left: 32px;
 	margin-right: 16px;
+	margin-left: 16px;
+	margin-top: 16px;
+	background-color: white;
+	box-shadow: 0 0 10px white;
+	border-radius: 30px;
 }
 .Ubicacion {
 	color: white;
 	width: 100%;
 	height: fit-content;
 	text-align: center;
-	h1 {
+	h2 {
 		color: white;
 		text-shadow: 0 0 10px #000;
 	}

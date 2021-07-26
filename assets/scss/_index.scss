@@ -2,15 +2,19 @@
 /* CAROUSEL DE IMAGENES */
 .carousel-caption {
     background-color: transparentize($background-general, 0.7);
+    font-size: 20px;
+    h2{
+        font-size: 30px;
+    }
 }
 .Carrousel__Img {
-	max-height: 500px;
+	max-height: calc(100vh - 85px);
 }
 
 /* CSS Sub-seccion Comapñias */
 .Companias {
-	margin-top: 16px;
-	background-image: linear-gradient(to bottom, white, $background-general 75%);
+	padding-top: 16px;
+	background-image: linear-gradient(to bottom, whitesmoke, $background-general 75%);
     &__Titulo {
         font-size: 25px;
         font-style: oblique;
@@ -23,6 +27,7 @@
         background-color: $background-general;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
+        margin-left: -15px;
     }
     &__Img {
         padding-top: 16px;
@@ -34,8 +39,9 @@
         }
     }
     &__Texto {
+        font-size: medium;
         text-align: center;
-        color: whitesmoke;
+        color: white;
         line-height: 30px;
         padding-top: 16px;
     }
