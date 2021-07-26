@@ -22,7 +22,7 @@ $newsletter = $_POST['newsletter'];
 
 ​
 // Como funciona con el server
-$header = 'From: ' . $mail_asegurado . " \r\n";
+$header = "From: " . $mail_asegurado . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
@@ -54,7 +54,7 @@ $asunto = 'Siniestro informado desde la web';
 ​
 mail($para, $asunto, utf8_decode($mensaje), $header);
 
-echo "<h2>Siniestro informado con exito!</h2>​"
-header('Location:index.html');
-​
+echo "<h2>Siniestro informado con exito!</h2>​";
+​header("Location:index.html");
+
 ?>
