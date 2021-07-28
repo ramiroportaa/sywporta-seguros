@@ -7,6 +7,7 @@
 	margin-top: 16px;
 	margin-bottom: 16px;
 	padding: 16px;
+    box-shadow: 0 0 10px #000;
 }
 .BannerCotizacion {
 	display: flex;
@@ -22,11 +23,16 @@
         font-size: 50px;
         line-height: 50px;
         margin-top: 16px;
+        text-shadow: 0 0 10px white;
+        text-align: center;
         &:hover {
             transform: scale(1.25);
         }
     }
     &__Img {
+        display: block;
+        margin: auto;
+        box-shadow: 0 0 10px white;
         border-radius: 100%;
         background-color: $color-wsp--dark;
         width: 75%;

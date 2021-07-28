@@ -4,19 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- escala adaptable al dispositivo -->
-    <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Link a google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> <!-- Link a google fonts -->
+
+    <!-- Etiquetas SEO -->
+    <meta name="description" content="'SyW Porta asesores de seguros' es una empresa familiar dedicada a la comercialización y asesoramiento en materia de seguros en la provincia de San Juan, contamos con mas de 15 años de experiencia en el rubro, ofreciendo un amplio abanico de productos tanto en seguros patrimoniales como seguros de vida">
+    <meta name="keywords" content="SYW PORTA, SYWPORTA, SYW PORTA SEGUROS, SEGUROS, ASESORAMIENTO, SEGURO, AUTOMOTOR, AUTO, MOTO, VEHICULO, EMBARCACIONES, CAUCION, CREDITO, ASEGURADORAS, SAN JUAN, RIVADAVIA, PARANA, RIVADAVIA EN SAN JUAN, PARANA EN SAN JUAN, PAS, PRODUCTOR, ORGANIZACION DE SEGUROS, ASESOR, SEGUROS RIVADAVIA, PARANA SEGUROS, SEGUROS RIVADAVIA PRODUCTORES">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo_syw.png" sizes="16x16">
+
+    <!-- Open graph -->
+    <meta property="og:title" content="SyW Porta | Productores Asesores de Seguros en San Juan"/> 
+    <meta property="og:url" content="https://sywportaseguros.000webhostapp.com/"/>
+    <meta property="og:image" content="https://i.ibb.co/W0PMp5z/PORTADA-Sy-WPorta.jpg"/>
+    <meta property="og:description" content="'SyW Porta asesores de seguros' es una empresa familiar dedicada a la comercialización y asesoramiento en materia de seguros en la provincia de San Juan, contamos con mas de 15 años de experiencia en el rubro, ofreciendo un amplio abanico de productos tanto en seguros patrimoniales como seguros de vida">
+    <meta property="og:locale" content="es_ES"/>
+    <meta property="og:type" content="website"/>
+
+    <!-- Links a google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
 
     <!--Bootstrap del CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="assets/css/style.css"> <!-- CSS propio -->
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="assets/css/style.css"> 
 
     <!-- Font Awesome (para iconos redes)-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
 
-    <title>SyWPorta Asesores de Seguros - HOME</title> <!-- titulo de la pagina -->
+    <!-- titulo de la pagina -->
+    <title>SyW Porta - Productores Asesores de Seguros en San Juan | HOME</title> 
 
 </head>
 
@@ -25,14 +44,15 @@
     <!-- HEADER -->
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-            <a class="navbar-brand" href="#"><img src="img/logo_syw.png" width="100px" alt="LOGO SYW-PORTA"></a>
+            <div class="container"> <!-- Container para que el nav se centre un poco mas -->
+            <a class="navbar-brand" href="#"><img src="img/logo_syw.png" width="80px" alt="LOGO SYW-PORTA ASESORES DE SEGUROS"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="index.html">HOME</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="html/coberturas.html">COBERTURAS</a>
@@ -47,29 +67,31 @@
                 <a class="nav-link" href="html/siniestro.html">TUVE UN SINIESTRO</a>
                 </li>                
             </ul>
-            <div class="Redes row justify-content-center">
+            <ul class="navbar-nav Redes">
                 <!-- Twitter -->
 <!--                 <a type="button" class="btn-floating btn-tw">
                     <i class="fab fa-twitter"></i>
                 </a> -->
                 <!-- Facebook -->
-                <a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
+                <li class="nav-item"><a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
                     <i class="fab fa-facebook-f"></i>
-                </a>
+                </a></li>
                 <!-- Instagram -->
-                <a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
+                <li class="nav-item"><a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
                     <i class="fab fa-instagram"></i>
-                </a>
+                </a></li>
                 <!-- WhatsApp -->
-                <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
+                <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
                     <i class="fab fa-whatsapp"></i>
-                </a>
+                </a></li>
+            </ul>
             </div>
-            </div>
+        </div>
         </nav>
+        
     </header>
 
-    <div class="row" style="height: 100px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
+    <div class="row" style="height: 85px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
     <main>
     <!-- 1RA SECCION: CAROUSEL CON BOOTSTRAP -->
@@ -79,28 +101,32 @@
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
         </ol>
 
         <!-- The slideshow -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/familiar-1-370x250.jpeg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU CASA">
+            <div class="carousel-item active">
+                <img src="https://i.ibb.co/8gZGcX5/Sy-WPorta-banner.jpg" class="d-block w-100 Carrousel__Img" alt="BANNER DE BIENVENIDA">
+              </div>
+          <div class="carousel-item">
+            <img src="https://i.ibb.co/b33SPjy/Family-moving-People-use-a-boxes-Little-boy-with-parents.jpg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU CASA" loading="lazy">
             <div class="carousel-caption">
-              <h1>ASEGURA TU CASA</h1>
+              <h2>ASEGURA TU CASA</h2>
               <p>Solicita cotizacion ahora! No corras mas riesgo.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/automotor-370x250.jpeg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU AUTO">
+            <img src="https://i.ibb.co/S6y7Pt4/luxury-sport-car-with-xenon-lights-front-view.jpg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU AUTO" loading="lazy">
             <div class="carousel-caption">
-              <h1>ASEGURA TU VEHICULO</h1>
+              <h2>ASEGURA TU VEHICULO</h2>
               <p>Asesorate con nosotros y quedate tranqui!</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="img/comercio-370x250.jpeg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU COMERCIO">
+            <img src="https://i.ibb.co/640mFrh/Portrait-of-female-shopkeeper-standing-at-turkish-sweets-counter-in-shop.jpg" class="d-block w-100 Carrousel__Img" alt="ASEGURA TU COMERCIO" loading="lazy">
             <div class="carousel-caption">
-              <h1>ASEGURA TU COMERCIO</h1>
+              <h2>ASEGURA TU COMERCIO</h2>
               <p>Quedate tranquilo, nosotros cuidamos de lo tuyo.</p>
             </div>
           </div>
@@ -127,22 +153,22 @@
         </div>
         <div class="row">
             <div class="col-md-4">
-                <a href="http://www.segurosrivadavia.com/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA"></a>
-                <h5 class="Companias__Texto">SEGUROS BERNARDINO RIVADAVIA: <br>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!</span>
-                </h5>
+                <a href="http://www.segurosrivadavia.com/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_rivadavia.png" alt="LOGO RIVADAVIA" loading="lazy"></a>
+                <h3 class="Companias__Texto">SEGUROS BERNARDINO RIVADAVIA: <br>
+                    <span>Ocupa una posición de relevancia en el sector asegurador argentino, afirmándose como una entidad altamente profesional, modelo de seriedad y solidez, que ofrece excelencia en protección a todos sus asociados.</span>
+                </h3>
             </div>
             <div class="col-md-4">
-                <a href="http://www.paranaseguros.com.ar/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_parana.png" alt="LOGO PARANA"></a>
-                <h5 class="Companias__Texto">PARANA SEGUROS: <br>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!</span>
-                </h5>
+                <a href="http://www.paranaseguros.com.ar/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_parana.png" alt="LOGO PARANA" loading="lazy"></a>
+                <h3 class="Companias__Texto">PARANA SEGUROS: <br>
+                    <span>Una empresa comprometida de trayectoria exitosa e innovadora, con una visión superadora de los constantes cambios planteados en el Mercado y la Sociedad, donde la única preocupación es brindarle un buen servicio.</span>
+                </h3>
             </div>
             <div class="col-md-4">
-                <a href="https://www.cooperacionseguros.com.ar/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_cooperacion.png" alt="LOGO COOPERACION"></a>
-                <h5 class="Companias__Texto">COOPERACION SEGUROS: <br>
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fuga fugiat nostrum consequuntur facilis cumque ipsam, unde repellat delectus autem!</span>
-                </h5>
+                <a href="https://www.cooperacionseguros.com.ar/" target="_blank"><img class="Companias__Img mx-auto d-block" src="img/logo_cooperacion.png" alt="LOGO COOPERACION" loading="lazy"></a>
+                <h3 class="Companias__Texto">COOPERACION SEGUROS: <br>
+                    <span>La responsabilidad, transparencia y prolijidad en el manejo del negocio fueron las convicciones que, junto a una dedicada atención a sus asociados y representantes, conformaron la receta del éxito que se mantiene hasta la actualidad.</span>
+                </h3>
             </div>
         </div>
     </section>
@@ -151,10 +177,10 @@
     <section class="Banner row justify-content-center align-items-center"> 
         <div class="BannerWp row align-items-center">
             <div class="col-md-8">
-                <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><h1 class="Banner__Texto text-center"> Pedi cotizacion y asesorate por WhatsApp</h1></a>
+                <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><h3 class="Banner__Texto text-center"> Pedi cotizacion y asesorate por WhatsApp</h3></a>
             </div>
             <div class="col-md-4">
-                <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><img class="Banner__Img mx-auto d-block" src="img/icono_wsp.png" alt="Wsp"></a> 
+                <a class="Banner__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." target="_blank"><img class="Banner__Img mx-auto d-block" src="img/icono_wsp.png" alt="Wsp" loading="lazy"></a> 
             </div>
         </div>
     </section> 
@@ -175,9 +201,9 @@
     
             <!-- Content -->
             <h5 class="font-weight-bold text-uppercase mb-4">INFO</h5>
-            <p>Esta es una pagina web informativa del ASESOR, NO somos la ASEGURADORA.</p>
-            <p>N° de Inscripcion SSN: <br>0124 <br>0124 <br>0124</p>
-            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_ssn.png" alt="logo SSN" width="200px"></a>
+            <p>Junto a las compañias que nos respaldan, día a día llevamos adelante este arduo trabajo para brindarle a usted: respaldo, servicio, tranquilidad y la mejor atención.</p>
+            <p>N° de Inscripción SSN: <br>64245 | AGÜERO SONIA MARGARITA <br>89010 | PORTA RAMIRO ARIEL<br>85152 | PORTA LEANDRO EZEQUIEL</p>
+            <a href="https://www.argentina.gob.ar/superintendencia-de-seguros" target="_blank"><img src="img/logo_ssn.png" alt="logo SSN" loading="lazy"></a>
             </div>
 
             <!-- Grid column -->
@@ -279,12 +305,16 @@
     
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2021 Copyright:
-        <a href="https://www.instagram.com/ramiroportaa/" target="_blank"> Ramiro Porta</a>
+        <a href="#"> Ramiro Porta</a>
         </div>
         <!-- Copyright -->
     
     </footer>
     <!-- Footer -->
+
+    <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." class="flotante" target="_blank">
+        <i class="fab fa-whatsapp float-wsp"></i>
+    </a>
 
 
 <!-- aqui van los scripts de js -->

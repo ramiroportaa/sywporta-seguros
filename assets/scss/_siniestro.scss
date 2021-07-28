@@ -1,58 +1,59 @@
 /* COMIENZO CSS DE LA SECCION SINIESTRO */
 .info {
 	background-color: $footer;
+	border-radius: 50px;
 	width: 100%;
 	margin-top: 16px;
+	text-align: center;
+	font-size: 30px;
+	padding: 16px;
 }
 .Formulario {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	margin-top: 16px;
 	margin-bottom: 16px;
 }
 .FormularioSiniestro {
-	background-color: #ECF1F3;
+	background-color: white;
+	box-shadow: 0 0 10px black;
 	border-style: outset;
 	border-color: $background-general;
+	padding: 16px;
+	max-width: 800px;
+	display: block;
+	margin: auto;
     &__Set {
-        background-color: white;
+        background-color: darken(white,5);
     }
 }
 .ContenedorBanner {
 	background-image: radial-gradient($color-wsp--light, $color-wsp--dark);
-	height: min-content;
-	align-self: center;
-	box-shadow: 0 0 20px white;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
+	box-shadow: 0 0 10px white;
+	border-radius: 60px;
 	padding: 16px;
+	margin-bottom: 16px;
 }
 .BannerSiniestro__Texto {
 	line-height: 50px;
 	color: white;
 	font-size: 30px;
 	padding-right: 10px;
-	text-align: end;
+	text-align: center;
 	text-decoration: underline wavy white;
 }
 .Wsp {
 	padding-top: 30px;
-	width: fit-content;
 	height: fit-content;
-	text-align: end;
+	text-align: center;
     &__Img {
         width: 200px;
         height: 200px;
-        margin-right: 16px;
         margin-top: 30px;
     }
     &__Texto {
         color: white;
         font-size: 30px;
         line-height: 30px;
-        width: fit-content;
-        text-align: end;
+        text-align: center;
     }
     &__Link {
         text-decoration: none;

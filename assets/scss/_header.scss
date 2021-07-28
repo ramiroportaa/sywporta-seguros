@@ -1,17 +1,20 @@
 /* Menu de navegacion */
 .navbar {
-	background-color:$header;
+	background-color:transparentize($header,0.05);
 }
 .Redes {
-	margin-right: 8px;
-	a {
-		width: 50px;
-		text-align: end;
-		font-size: 40px;
+	min-width: 120px;
+	justify-content: space-between;
+	text-align: center;
+	& li{
+		display:inline;
+		padding-left:3px;
+		padding-right:3px;
 	}
 }
+
 .btn-redes {
-	font-size: 50px;
+	font-size: 30px;
 	color: white;
 	&:hover {
 		text-decoration: none;

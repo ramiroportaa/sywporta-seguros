@@ -12,14 +12,37 @@ body {
 	background-color: white;
 	font-family: 'Oswald', sans-serif;
 	line-height: 1.6rem;
-	margin: 0;
+	margin: 0px;
 }
 h1 {
 	color: white;
+	text-shadow: 0 0 10px #000;
 }
 main {
 	&.Contenido {
-		background-image: linear-gradient(to bottom, white, $background-general 75%);
+		background-image: linear-gradient(to bottom, whitesmoke, $background-general 75%);
+	}
+}
+.flotante {
+    position: fixed;
+    width: 60px;
+    height: 57px;
+    bottom: 72px;
+    right: 15px;
+    background-color: transparentize($color-wsp--light, 0.2);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 34px;
+    box-shadow: 2px 2px 3px black;
+    z-index: 6;
+    padding: 10px;
+    & i{
+        font-size: 35px;
+		color: white;
+    }
+	&:hover{
+		background-color: $color-wsp--dark;
 	}
 }
 
@@ -31,3 +54,11 @@ main {
 @import "cotizaciones";
 @import "nosotros";
 @import "siniestro";
+
+
+/* PARA QUE BOOTSTRAP NO AÑADA ESPACIO EN BLANCO A LA DERECHA */
+.row{
+	margin-right: 0px;
+	margin-left: 0px;
+ }
+ 
