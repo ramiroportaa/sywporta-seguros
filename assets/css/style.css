@@ -148,11 +148,12 @@ main.Contenido {
 /* Comienzo CSS INDEX */
 /* CAROUSEL DE IMAGENES */
 .carousel-caption {
+  margin-bottom: 16px;
   background-color: rgba(8, 27, 38, 0.3);
-  font-size: 20px;
+  font-size: 4vw;
 }
 .carousel-caption h2 {
-  font-size: 30px;
+  font-size: 5vw;
 }
 
 .Carrousel__Img {
@@ -181,14 +182,16 @@ main.Contenido {
 .Companias__Img {
   padding-top: 16px;
   transition: transform 1s;
-  width: 90%;
   max-width: 240px;
 }
 .Companias__Img:hover {
   transform: scale(1.25, 1.25);
 }
 .Companias__Texto {
-  font-size: medium;
+  display: block;
+  margin: auto;
+  max-width: 440px;
+  font-size: 16px;
   text-align: center;
   color: white;
   line-height: 30px;
