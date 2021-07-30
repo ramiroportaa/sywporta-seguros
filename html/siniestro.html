@@ -42,157 +42,155 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top">
             <div class="container"> <!-- Container para que el nav se centre un poco mas -->
-            <a class="navbar-brand" href="#"><img src="../img/logo_syw.png" width="80px" alt="LOGO SYW-PORTA ASESORES DE SEGUROS"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="coberturas.html">COBERTURAS</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="cotizaciones.html">COTIZACIONES</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li class="nav-item active">
-                <a class="nav-link" href="siniestro.html">TUVE UN SINIESTRO</a>
-                </li>                
-            </ul>
-            <ul class="navbar-nav Redes">
-                <!-- Twitter -->
-<!--                 <a type="button" class="btn-floating btn-tw">
-                    <i class="fab fa-twitter"></i>
-                </a> -->
-                <!-- Facebook -->
-                <li class="nav-item"><a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                </a></li>
-                <!-- Instagram -->
-                <li class="nav-item"><a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a></li>
-                <!-- WhatsApp -->
-                <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
-                    <i class="fab fa-whatsapp"></i>
-                </a></li>
-            </ul>
+                <a class="navbar-brand" href="#"><img src="../img/logo_syw.png" width="80px" alt="LOGO SYW-PORTA ASESORES DE SEGUROS"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="coberturas.html">COBERTURAS</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="cotizaciones.html">COTIZACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item active">
+                        <a class="nav-link" href="siniestro.html">TUVE UN SINIESTRO</a>
+                        </li>                
+                    </ul>
+                    <ul class="navbar-nav Redes">
+                        <!-- Facebook -->
+                        <li class="nav-item"><a href="https://www.facebook.com/SyWPortaSeguros" type="button" class="btn-redes" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a></li>
+                        <!-- Instagram -->
+                        <li class="nav-item"><a href="https://www.instagram.com/sywporta_asesoresdeseguros/" type="button" class="btn-redes" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a></li>
+                        <!-- WhatsApp -->
+                        <li class="nav-item"><a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." type="button" class="btn-redes" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </nav>
-        
+        </nav>        
     </header>
 
     <div class="row" style="height: 85px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
         <main class="Contenido container-fluid">
-
+            <!-- Titulo -->
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h1>DENUNCIA DE SINIESTRO AUTOMOTOR</h1>
                     <hr>
                 </div>
             </div>
+            <!-- Formulario de siniestro -->
             <div class="row">
                 <h2 class="info">El siguiente formulario es solo para denunciar un siniestro AUTOMOTOR. <br>
-                    Si queres denunciar un siniestro de OTRO RAMO, contactanos via WhatsApp o mail.
+                    Si queres denunciar un siniestro de OTRO RAMO, contactanos via 
+                    <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Quiero%20denunciar%20un%20siniestro." target="_blank">WhatsApp
+                    </a> o mail <small>(sywportaseguros@gmail.com).</small>
                 </h2>
-            <section class="col col-md-12 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
-                <form class="FormularioSiniestro" action="enviar2.php" method="post" name="siniestro-form">
-                    <fieldset>
-                        <legend>INFORMAR UN SINIESTRO AUTOMOTOR</legend>
-                        <fieldset class="FormularioSiniestro__Set">
-                            <legend>Informacion del ASEGURADO</legend>
-                            <label for="nya_asegurado"> Nombre y Apellido </label>
-                            <input type="text" name="nya_asegurado" maxlength="100">
+                <section class="col col-md-12 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
+                    <form class="FormularioSiniestro" action="../enviar2.php" method="post" name="siniestro-form">
+                        <fieldset>
+                            <legend>INFORMAR UN SINIESTRO AUTOMOTOR</legend>
+                            <fieldset class="FormularioSiniestro__Set">
+                                <legend>Informacion del ASEGURADO</legend>
+                                <label for="nya_asegurado"> Nombre y Apellido </label>
+                                <input type="text" name="nya_asegurado" maxlength="100">
+                                <br>
+                                <label for="dni_asegurado"> DNI </label>
+                                <input type="text" name="dni_asegurado" maxlength="100">
+                                <br>
+                                <label for="tel_asegurado"> Tel/Cel. </label>
+                                <input type="tel" name="tel_asegurado" maxlength="14">
+                                <br>
+                                <label for="mail_asegurado"> E-Mail </label>
+                                <input type="email" name="mail_asegurado">
+                                <br>
+                                <label for="compa_asegurado">Compañia Aseguradora</label>
+                                <select name="compa_asegurado">
+                                    <option value="Rivadavia">SEGUROS RIVADAVIA</option>
+                                    <option value="Cooperacion">COOPERACION MUTUAL</option>
+                                    <option value="Parana">PARANA S.A.</option>
+                                </select>
+                                <br>
+                                <label for="patente_asegurado">Patente</label>
+                                <input type="text" name="patente_asegurado" maxlength="20">
+                                <br>
+                            </fieldset>
+                            <fieldset class="FormularioSiniestro__Set">
+                                <legend>Informacion del CONDUCTOR <small>(Solo si difiere del asegurado)</small></legend>
+                                <label for="nya_conductor"> Nombre y Apellido </label>
+                                <input type="text" name="nya_conductor" maxlength="100">
+                                <br>
+                                <label for="dni_conductor"> DNI </label>
+                                <input type="text" name="dni_conductor" maxlength="100">
+                                <br>
+                                <label for="tel_conductor"> Tel/Cel. </label>
+                                <input type="tel" name="tel_conductor" maxlength="14">
+                                <br>
+                            </fieldset>
+                            <fieldset class="FormularioSiniestro__Set">
+                                <legend>Informacion del TERCERO <small>(En caso de existir)</small></legend>
+                                <label for="nya_tercero"> Nombre y Apellido </label>
+                                <input type="text" name="nya_tercero" maxlength="100">
+                                <br>
+                                <label for="dni_tercero"> DNI </label>
+                                <input type="text" name="dni_tercero" maxlength="100">
+                                <br>
+                                <label for="tel_tercero"> Tel/Cel. </label>
+                                <input type="tel" name="tel_tercero" maxlength="14">
+                                <br>
+                                <label for="vehiculo_tercero"> Vehiculo (Marca y modelo)</label>
+                                <input type="text" name="vehiculo_tercero" maxlength="200">
+                                <br>
+                                <label for="patente_tercero">Patente</label>
+                                <input type="text" name="patente_tercero" maxlength="20">
+                                <br>
+                                <label for="compa_tercero"> Compañia Aseguradora </label>
+                                <input type="text" name="compa_tercero" maxlength="100">
+                                <br>
+                            </fieldset>
+                            <fieldset class="FormularioSiniestro__Set">
+                                <legend>Informacion del Siniestro</legend>
+                                <label for="fechahora">Fecha y Hora</label>
+                                <input type="datetime-local" name="fechahora">
+                                <br>
+                                <label for="lugar"> Lugar (Calle, Altura, Ciudad)</label>
+                                <input type="text" name="lugar" maxlength="200">
+                                <br>
+                                <textarea  name="descripcion" cols="30" rows="10" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
+                                <br>
+                            </fieldset class="FormularioSiniestro__Set">
+                            <label for="newsletter">Desea recibir el newsletter?</label>
+                            <input type="checkbox" name="newsletter" value="1">
                             <br>
-                            <label for="dni_asegurado"> DNI </label>
-                            <input type="text" name="dni_asegurado" maxlength="100">
-                            <br>
-                            <label for="tel_asegurado"> Tel/Cel. </label>
-                            <input type="tel" name="tel_asegurado" maxlength="14">
-                            <br>
-                            <label for="mail_asegurado"> E-Mail </label>
-                            <input type="email" name="mail_asegurado">
-                            <br>
-                            <label for="compa_asegurado">Compañia Aseguradora</label>
-                            <select name="compa_asegurado">
-                                <option value="Rivadavia">SEGUROS RIVADAVIA</option>
-                                <option value="Cooperacion">COOPERACION MUTUAL</option>
-                                <option value="Parana">PARANA S.A.</option>
-                            </select>
-                            <br>
-                            <label for="patente_asegurado">Patente</label>
-                            <input type="text" name="patente_asegurado" maxlength="20">
-                            <br>
+                            <input type="submit" name="submit" value="Enviar">
+                            <input type="reset" name="reset" value="Limpiar">
                         </fieldset>
-                        <fieldset class="FormularioSiniestro__Set">
-                            <legend>Informacion del CONDUCTOR <small>(Solo si difiere del asegurado)</small></legend>
-                            <label for="nya_conductor"> Nombre y Apellido </label>
-                            <input type="text" name="nya_conductor" maxlength="100">
-                            <br>
-                            <label for="dni_conductor"> DNI </label>
-                            <input type="text" name="dni_conductor" maxlength="100">
-                            <br>
-                            <label for="tel_conductor"> Tel/Cel. </label>
-                            <input type="tel" name="tel_conductor" maxlength="14">
-                            <br>
-                        </fieldset>
-                        <fieldset class="FormularioSiniestro__Set">
-                            <legend>Informacion del TERCERO <small>(En caso de existir)</small></legend>
-                            <label for="nya_tercero"> Nombre y Apellido </label>
-                            <input type="text" name="nya_tercero" maxlength="100">
-                            <br>
-                            <label for="dni_tercero"> DNI </label>
-                            <input type="text" name="dni_tercero" maxlength="100">
-                            <br>
-                            <label for="tel_tercero"> Tel/Cel. </label>
-                            <input type="tel" name="tel_tercero" maxlength="14">
-                            <br>
-                            <label for="vehiculo_tercero"> Vehiculo (Marca y modelo)</label>
-                            <input type="text" name="vehiculo_tercero" maxlength="200">
-                            <br>
-                            <label for="patente_tercero">Patente</label>
-                            <input type="text" name="patente_tercero" maxlength="20">
-                            <br>
-                            <label for="compa_tercero"> Compañia Aseguradora </label>
-                            <input type="text" name="compa_tercero" maxlength="100">
-                            <br>
-                        </fieldset>
-                        <fieldset class="FormularioSiniestro__Set">
-                            <legend>Informacion del Siniestro</legend>
-                            <label for="fechahora">Fecha y Hora</label>
-                            <input type="datetime-local" name="fechahora">
-                            <br>
-                            <label for="lugar"> Lugar (Calle, Altura, Ciudad)</label>
-                            <input type="text" name="lugar" maxlength="200">
-                            <br>
-                            <textarea  name="descripcion" cols="30" rows="10" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
-                            <br>
-                        </fieldset class="FormularioSiniestro__Set">
-                        <label for="newsletter">Desea recibir el newsletter?</label>
-                        <input type="checkbox" name="newsletter" value="1">
-                        <br>
-                        <input type="submit" name="submit" value="Enviar">
-                        <input type="reset" name="reset" value="Limpiar">
-                    </fieldset>
-            
-                </form>
-            </section>
-            <section class="col col-md-12 ContenedorBanner"> <!-- 2da seccion: banner wsp -->
+                
+                    </form>
+                </section>
+                <section class="col col-md-12 ContenedorBanner"> <!-- 2da seccion: banner wsp -->
 
-                    <h2 class="BannerSiniestro__Texto">Tuviste un siniestro de OTRO RAMO?</h2>
-                    <h3 class="Wsp__Texto">(Embarcaciones, Bicicletas, Vida, Accidentes personales, Hogar, etc)</h3>
-                    <div class="Wsp">
-                        <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><h4 class="Wsp__Texto">Contactanos por WhatsApp y te asesoramos!</h4></a>
-                        <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Wsp__Img" src="../img/icono_wsp.png" alt="Wsp"></a>
-                    </div>
-            </section>
+                        <h2 class="BannerSiniestro__Texto">Tuviste un siniestro de OTRO RAMO?</h2>
+                        <h3 class="Wsp__Texto">(Embarcaciones, Bicicletas, Vida, Accidentes personales, Hogar, etc)</h3>
+                        <div class="Wsp">
+                            <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><h4 class="Wsp__Texto">Contactanos por WhatsApp y te asesoramos!</h4></a>
+                            <a class="Wsp__Link" href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta."><img class="Wsp__Img" src="../img/icono_wsp.png" alt="Wsp"></a>
+                        </div>
+                </section>
             </div>
         </main>
 
@@ -321,6 +319,7 @@
     </footer>
     <!-- Footer -->
 
+    <!-- Logo WhatsApp flotante -->
     <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Tengo%20una%20consulta." class="flotante" target="_blank">
         <i class="fab fa-whatsapp float-wsp"></i>
     </a>
