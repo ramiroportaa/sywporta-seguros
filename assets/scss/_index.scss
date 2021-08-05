@@ -1,13 +1,39 @@
 /* Comienzo CSS INDEX */
 /* CAROUSEL DE IMAGENES */
 .carousel-caption {
-    margin-bottom: 16px;
-    background-color: transparentize($background-general, 0.7);
-    font-size: 4vw;
-    h2{
-        font-size: 5vw;
+    &-general{
+        max-height: 60%;
+        margin-bottom: 16px;
+        background-color: transparentize($background-general, 0.7);
+        font-size: 3vw;
+        h2{
+            font-size: 4vw;
+            font-weight: bold;
+            text-shadow: 0 0 10px black;
+        }
+        p{
+            font-weight: lighter;
+            line-height: 3vw;
+            text-shadow: 0 0 5px black;
+        }
+    }
+    &-logo{
+        width: 30%;
+        min-width: 125px;
+        display: block;
+        margin: auto;
+        bottom: 30%;
+    }
+    &-slogan{
+        bottom: 10%;
+        h2{
+            font-size: 4vw;
+            font-weight: bold;
+            text-shadow: 0 0 10px black;
+        }
     }
 }
+
 .Carrousel__Img {
 	max-height: calc(100vh - 85px);
 }

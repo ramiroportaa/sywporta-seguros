@@ -147,13 +147,36 @@ main.Contenido {
 
 /* Comienzo CSS INDEX */
 /* CAROUSEL DE IMAGENES */
-.carousel-caption {
+.carousel-caption-general {
+  max-height: 60%;
   margin-bottom: 16px;
   background-color: rgba(8, 27, 38, 0.3);
-  font-size: 4vw;
+  font-size: 3vw;
 }
-.carousel-caption h2 {
-  font-size: 5vw;
+.carousel-caption-general h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
+}
+.carousel-caption-general p {
+  font-weight: lighter;
+  line-height: 3vw;
+  text-shadow: 0 0 5px black;
+}
+.carousel-caption-logo {
+  width: 30%;
+  min-width: 125px;
+  display: block;
+  margin: auto;
+  bottom: 30%;
+}
+.carousel-caption-slogan {
+  bottom: 10%;
+}
+.carousel-caption-slogan h2 {
+  font-size: 4vw;
+  font-weight: bold;
+  text-shadow: 0 0 10px black;
 }
 
 .Carrousel__Img {
