@@ -44,8 +44,8 @@
 	background-image: linear-gradient(to bottom, whitesmoke, $background-general 75%);
     &__Titulo {
         font-size: 25px;
-        font-style: oblique;
         text-align: left;
+        font-weight: bold;
         color: white;
         line-height: 30px;
         justify-self: left;
@@ -55,6 +55,7 @@
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
         margin-left: -15px;
+        animation-duration: 1.0s;
     }
     &__Img {
         padding-top: 16px;
@@ -106,4 +107,5 @@
 	border-radius: 100px;
 	margin: 16px;
 	overflow: hidden;
+    --animate-duration: 2.0s;
 }

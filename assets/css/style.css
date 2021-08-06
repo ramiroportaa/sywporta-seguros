@@ -9,6 +9,7 @@ html {
 * {
   margin: 0;
   box-sizing: border-box;
+  animation-duration: 1s;
 }
 
 body {
@@ -190,8 +191,8 @@ main.Contenido {
 }
 .Companias__Titulo {
   font-size: 25px;
-  font-style: oblique;
   text-align: left;
+  font-weight: bold;
   color: white;
   line-height: 30px;
   justify-self: left;
@@ -201,6 +202,7 @@ main.Contenido {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   margin-left: -15px;
+  animation-duration: 1s;
 }
 .Companias__Img {
   padding-top: 16px;
@@ -252,6 +254,7 @@ main.Contenido {
   border-radius: 100px;
   margin: 16px;
   overflow: hidden;
+  --animate-duration: 2.0s;
 }
 
 /* Comienzo CSS seccion COBERTURAS */
