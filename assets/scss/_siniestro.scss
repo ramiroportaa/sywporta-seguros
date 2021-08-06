@@ -5,7 +5,7 @@
 	width: 100%;
 	margin-top: 16px;
 	text-align: center;
-	font-size: 30px;
+	font-size: 1.5rem;
 	padding: 16px;
 }
 .Formulario {
@@ -30,29 +30,31 @@
 	box-shadow: 0 0 10px white;
 	border-radius: 60px;
 	padding: 16px;
-	margin-bottom: 16px;
+	max-width: 800px;
+	display: block;
+	margin: auto;
 }
 .BannerSiniestro__Texto {
-	line-height: 50px;
+	line-height: 2rem;
 	color: white;
-	font-size: 30px;
+	font-size: 1.7rem;
 	padding-right: 10px;
 	text-align: center;
-	text-decoration: underline wavy white;
+	text-decoration: underline white;
 }
 .Wsp {
 	padding-top: 30px;
 	height: fit-content;
 	text-align: center;
     &__Img {
-        width: 200px;
-        height: 200px;
+        width: 12rem;
+        height: 12rem;
         margin-top: 30px;
     }
     &__Texto {
         color: white;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 1.7rem;
+        line-height: 1.7rem;
         text-align: center;
     }
     &__Link {

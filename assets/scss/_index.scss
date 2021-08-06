@@ -38,29 +38,36 @@
 	max-height: calc(100vh - 85px);
 }
 
+@media (max-width: 576px) {
+	.carousel-caption {
+		font-size: 14px;
+	}
+}
+
 /* CSS Sub-seccion Comapñias */
 .Companias {
 	padding-top: 16px;
 	background-image: linear-gradient(to bottom, whitesmoke, $background-general 75%);
     &__Titulo {
-        font-size: 25px;
+        font-size: 1.7rem;
         text-align: left;
         font-weight: bold;
         color: white;
-        line-height: 30px;
+        line-height: 1.8rem;
         justify-self: left;
-        padding-left: 50px;
-        padding-right: 20px;
+        padding-left: 3rem;
+        padding-right: 1.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         background-color: $background-general;
         border-bottom-right-radius: 20px;
         border-top-right-radius: 20px;
         margin-left: -15px;
-        animation-duration: 1.0s;
     }
     &__Img {
         padding-top: 16px;
         transition: transform 1s;
-        max-width: 240px;
+        max-width: 15rem;
         &:hover {
             transform: scale(1.25,1.25);
         }
@@ -69,10 +76,10 @@
         display: block;
         margin: auto;
         max-width: 440px;
-        font-size: 16px;
+        font-size: 1rem;
         text-align: center;
         color: white;
-        line-height: 30px;
+        line-height: 1.5rem;
         padding-top: 16px;
     }
 }
@@ -83,15 +90,15 @@
 	padding: 10px 20px;
     &__Texto {
         color: white;
-        font-size: 3rem;
-        line-height: 50px;
+        font-size: 2.5rem;
+        line-height: 3rem;
     }
     &__Link {
         text-decoration: none;
     }
     &__Img {
-        width: 125px;
-        height: 125px;
+        width: 7.8rem;
+        height: 7.8rem;
         transition: 1s;
         &:hover {
             transform: scale(1.25,1.25);

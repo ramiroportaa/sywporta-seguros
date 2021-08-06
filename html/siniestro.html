@@ -92,7 +92,7 @@
         </nav>        
     </header>
 
-    <div class="row" style="height: 80px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
+    <div class="row espacio"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
         <main class="Contenido container-fluid">
             <!-- Titulo -->
@@ -104,12 +104,12 @@
             </div>
             <!-- Formulario de siniestro -->
             <div class="row">
-                <h2 class="info">El siguiente formulario es solo para denunciar un siniestro AUTOMOTOR. <br>
+                <h2 class="info wow animate__animated animate__bounceInLeft">El siguiente formulario es solo para denunciar un siniestro AUTOMOTOR. <br>
                     Si queres denunciar un siniestro de OTRO RAMO, contactanos via 
                     <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Quiero%20denunciar%20un%20siniestro." target="_blank">WhatsApp
                     </a> o mail <small>(sywportaseguros@gmail.com).</small>
                 </h2>
-                <section class="col col-md-12 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
+                <section class="col col-sm-12 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
                     <form class="FormularioSiniestro" action="../enviar2.php" method="post" name="siniestro-form">
                         <fieldset>
                             <legend>INFORMAR UN SINIESTRO AUTOMOTOR</legend>
@@ -179,19 +179,19 @@
                                 <label for="lugar"> Lugar (Calle, Altura, Ciudad)</label>
                                 <input type="text" name="lugar" maxlength="200">
                                 <br>
-                                <textarea  name="descripcion" cols="30" rows="10" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
+                                <textarea  name="descripcion" cols="25" rows="20" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
                                 <br>
                             </fieldset class="FormularioSiniestro__Set">
                             <label for="newsletter">Desea recibir el newsletter?</label>
                             <input type="checkbox" name="newsletter" value="1">
                             <br>
-                            <input type="submit" name="submit" value="Enviar">
-                            <input type="reset" name="reset" value="Limpiar">
+                            <input type="submit" name="submit" value="Enviar" class="btn btn-success">
+                            <input type="reset" name="reset" value="Limpiar" class="btn btn-danger">
                         </fieldset>
                 
                     </form>
                 </section>
-                <section class="col col-md-12 ContenedorBanner"> <!-- 2da seccion: banner wsp -->
+                <section class="col col-sm-12 ContenedorBanner wow animate__animated animate__bounceIn"> <!-- 2da seccion: banner wsp -->
 
                         <h2 class="BannerSiniestro__Texto">Tuviste un siniestro de OTRO RAMO?</h2>
                         <h3 class="Wsp__Texto">(Embarcaciones, Bicicletas, Vida, Accidentes personales, Hogar, etc)</h3>
