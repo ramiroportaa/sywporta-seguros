@@ -1,12 +1,41 @@
 /* CSS GENERAL */
 @import "variables";
 
+:root {
+	font-size: 16px;
+}
+
+@media (max-width: 576px) {
+	:root {
+		font-size: 12px;
+	}
+	.espacio{
+		height: 73px;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+	:root {
+		font-size: 14px;
+	}
+	.espacio{
+		height: 76px;
+	}
+}
+
+@media (min-width: 768px) {
+	.espacio{
+		height: 79px;
+	}
+}
+
 html {
 	position: relative;
 }
 * {
 	margin: 0;
 	box-sizing: border-box;
+	animation-duration: 1.0s;
 }
 body {
 	background-color: white;
@@ -18,11 +47,13 @@ h1 {
 	color: white;
 	text-shadow: 0 0 10px #000;
 }
-main {
-	&.Contenido {
+
+.Contenido {
 		background-image: linear-gradient(to bottom, whitesmoke, $background-general 75%);
-	}
+		padding-top: 16px;
+		padding-bottom: 16px;
 }
+
 .flotante {
     position: fixed;
     width: 60px;

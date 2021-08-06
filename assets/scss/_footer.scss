@@ -19,7 +19,7 @@ $redes: (
 
 @each $red, $color in $redes {
    	.btn-#{$red} {
-		font-size: 50px;
+		font-size: 3rem;
 		color: white;	 
 		&:hover {
 			text-decoration: none;

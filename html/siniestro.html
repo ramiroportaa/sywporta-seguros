@@ -29,7 +29,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../assets/css/style.css"> <!-- CSS propio -->
+    <!-- CDN de animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../assets/css/style.css"> 
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
@@ -85,7 +92,7 @@
         </nav>        
     </header>
 
-    <div class="row" style="height: 80px;"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
+    <div class="row espacio"></div> <!-- PARA QUE EL HEADER NO TAPE EL 1ER CONTENIDO -->
 
         <main class="Contenido container-fluid">
             <!-- Titulo -->
@@ -97,12 +104,12 @@
             </div>
             <!-- Formulario de siniestro -->
             <div class="row">
-                <h2 class="info">El siguiente formulario es solo para denunciar un siniestro AUTOMOTOR. <br>
+                <h2 class="info wow animate__animated animate__bounceInLeft">El siguiente formulario es solo para denunciar un siniestro AUTOMOTOR. <br>
                     Si queres denunciar un siniestro de OTRO RAMO, contactanos via 
                     <a href="https://api.whatsapp.com/send?phone=5492644109848&text=Hola!%20Quiero%20denunciar%20un%20siniestro." target="_blank">WhatsApp
                     </a> o mail <small>(sywportaseguros@gmail.com).</small>
                 </h2>
-                <section class="col col-md-12 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
+                <section class="col col-sm-12 Formulario"> <!-- 1ra Seccion Formulario de denuncia de siniestro -->
                     <form class="FormularioSiniestro" action="../enviar2.php" method="post" name="siniestro-form">
                         <fieldset>
                             <legend>INFORMAR UN SINIESTRO AUTOMOTOR</legend>
@@ -172,19 +179,19 @@
                                 <label for="lugar"> Lugar (Calle, Altura, Ciudad)</label>
                                 <input type="text" name="lugar" maxlength="200">
                                 <br>
-                                <textarea  name="descripcion" cols="30" rows="10" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
+                                <textarea  name="descripcion" cols="25" rows="20" placeholder="Descripcion del siniestro (INDICAR FORMA DE OCURRENCIA, DAÑOS DE SU VEHÍCULO Y DAÑOS DEL TERCERO)"></textarea>
                                 <br>
                             </fieldset class="FormularioSiniestro__Set">
                             <label for="newsletter">Desea recibir el newsletter?</label>
                             <input type="checkbox" name="newsletter" value="1">
                             <br>
-                            <input type="submit" name="submit" value="Enviar">
-                            <input type="reset" name="reset" value="Limpiar">
+                            <input type="submit" name="submit" value="Enviar" class="btn btn-success">
+                            <input type="reset" name="reset" value="Limpiar" class="btn btn-danger">
                         </fieldset>
                 
                     </form>
                 </section>
-                <section class="col col-md-12 ContenedorBanner"> <!-- 2da seccion: banner wsp -->
+                <section class="col col-sm-12 ContenedorBanner wow animate__animated animate__bounceIn"> <!-- 2da seccion: banner wsp -->
 
                         <h2 class="BannerSiniestro__Texto">Tuviste un siniestro de OTRO RAMO?</h2>
                         <h3 class="Wsp__Texto">(Embarcaciones, Bicicletas, Vida, Accidentes personales, Hogar, etc)</h3>
@@ -330,7 +337,10 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
+<script src="../js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 </body>
 </html>
