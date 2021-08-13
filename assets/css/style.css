@@ -299,12 +299,14 @@ h1 {
 
 .coberturas {
   padding-top: 16px;
+  /*Animacion de imagenes*/
 }
-.coberturas img {
+.coberturas__fondo {
   border: 1px solid white;
   max-width: 370px;
   min-width: 234px;
-  width: 90%;
+  width: 23rem;
+  height: 15rem;
 }
 .coberturas__tit-seg {
   background-color: #081B26;
@@ -323,6 +325,79 @@ h1 {
 .coberturas__tit-seg h2 {
   font-size: 1.2rem;
   color: white;
+}
+.coberturas__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 370px;
+  min-width: 234px;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 6px;
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+  background: rgba(8, 27, 38, 0.8);
+}
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  .coberturas__info {
+    overflow: hidden;
+  }
+}
+.coberturas__info-title {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 500ms ease-out;
+}
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  .coberturas__info-title {
+    font-size: 1.3em;
+  }
+}
+.coberturas__info-txt {
+  color: white;
+  font-size: 1rem;
+  max-width: 16rem;
+  margin: auto;
+}
+@media screen and (min-width: 200px) and (max-width: 450px) {
+  .coberturas__info-txt {
+    width: 100%;
+    font-size: 1em;
+    margin: auto;
+  }
+}
+.coberturas__info-img-link {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 10rem;
+}
+.coberturas__info-img-img {
+  padding: 2px;
+  width: 9rem;
+  max-height: 50px;
+  object-fit: contain;
+}
+.coberturas__info-img-img:hover {
+  background-color: rgba(8, 27, 38, 0.8);
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.coberturas:hover > .coberturas__info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.coberturas:hover > .coberturas__info .coberturas__info-title {
+  margin-top: 7%;
 }
 
 /* COMIENZO CSS COTIZACIONES */
