@@ -80,6 +80,26 @@ h1 {
   background-color: #075E54;
 }
 
+/* Videos de YouTube responsive */
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  padding-top: 30px;
+  /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* IMPORTACIONES */
 /* Menu de navegacion */
 .navbar {
@@ -463,6 +483,23 @@ h1 {
     background-color: #075E54;
   }
 }
+.cotizacion__video {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+  width: 80vw;
+  background-color: #081B26;
+  padding: 30px;
+  border-radius: 50px;
+  box-shadow: 0 0 10px #000;
+}
+.cotizacion__video h2 {
+  padding-left: 1rem;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
 /* COMIENZO CSS SECCION NOSOTROS */
 .ContenedorNosotros {
   margin-top: 16px;
@@ -594,7 +631,7 @@ h1 {
 .Wsp__Texto {
   color: white;
   font-size: 1.7rem;
-  line-height: 1.7rem;
+  line-height: 2rem;
   text-align: center;
 }
 .Wsp__Link {

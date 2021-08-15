@@ -47,7 +47,6 @@
         animation-delay: 3s;
     }
 }
-
 @keyframes wsp {
 	20%{
         background-color: $color-wsp--dark;
@@ -59,5 +58,21 @@
     100% {
 	    transform: rotatey(360deg);
 	    background-color: $color-wsp--dark;
+    }
+}
+.cotizacion__video{
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    width: 80vw;
+    background-color: $background-general;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #000;
+    h2 {
+        padding-left: 1rem;
+        color: white;
+        text-shadow: 0 0 10px black;
     }
 }
