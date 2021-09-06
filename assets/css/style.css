@@ -111,12 +111,19 @@ h1 {
   justify-content: space-between;
   text-align: center;
 }
-.Redes li {
-  display: inline;
-  padding-left: 3px;
-  padding-right: 3px;
-}
 
+@media (max-width: 768px) {
+  .Redes {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    max-width: 120px;
+    margin: auto;
+    background-color: rgba(146, 159, 186, 0.5);
+    padding: 1rem;
+    border-radius: 2rem;
+  }
+}
 .btn-redes {
   font-size: 30px;
   color: white;
