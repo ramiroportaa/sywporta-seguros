@@ -6,11 +6,20 @@
 	min-width: 120px;
 	justify-content: space-between;
 	text-align: center;
-	& li{
-		display:inline;
-		padding-left:3px;
-		padding-right:3px;
+}
+
+@media (max-width: 768px) {
+	.Redes{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		max-width: 120px;
+		margin: auto;
+		background-color: transparentize($footer, 0.5);
+		padding: 1rem;
+		border-radius: 2rem;
 	}
+
 }
 
 .btn-redes {
